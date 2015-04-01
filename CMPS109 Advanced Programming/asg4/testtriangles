@@ -1,0 +1,7 @@
+define right right_triangle 100 300
+define iso isoceles 100 200
+define equi equilateral 150
+
+draw right red 400 200
+draw iso blue 100 200
+draw equi green 300 300

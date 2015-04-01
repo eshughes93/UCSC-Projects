@@ -1,0 +1,44 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.1
+date	2013.05.02.03.49.58;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@//Evan Hughes [eshughes@@ucsc.edu]
+#include<stdio.h>
+#include<stdlib.h>
+#include "List.h"
+#include "insertionSort.h"
+
+
+void insertionSort(int keys[], int numKeys){
+	ListRef list = newList();
+	for(int i = 0; i < numKeys; i++){
+		sortedInsert(list, (long)keys[i]);
+	}
+	//printList(list);
+	for(int i = 0; i < numKeys; i++){
+		keys[i] = (int)getFirst(list);
+		if(!isEmpty(list))
+			deleteFirst(list);
+	}
+
+}
+
+@

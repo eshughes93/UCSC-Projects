@@ -1,0 +1,4 @@
+To get from 0 to 4 requires 2 edges, follow the path 0 1 4 
+To get from 0 to 3 requires 1 edges, follow the path 0 3 
+There is no path from 4 to 0 in the graph
+To get from 0 to 4 requires 2 edges, follow the path 0 1 4 

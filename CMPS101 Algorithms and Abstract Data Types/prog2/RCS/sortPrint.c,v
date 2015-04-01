@@ -1,0 +1,80 @@
+head	1.1;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.1
+date	2013.05.02.03.49.58;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@-
+@
+text
+@//Evan Hughes [eshughes@@ucsc.edu]
+
+#include<stdio.h>
+#include<stdlib.h>
+#include "heap.h"
+#include "List.h"
+#include "insertionSort.h"
+
+
+void openFile(char *filename){
+	FILE *input = fopen(filename, "r");  //open the file
+	int numKeys = 0; 
+	if(input == NULL){
+		printf("error: no input file\n");
+	} else {
+		fscanf(input, "%d", &numKeys); 
+	}
+	
+	int testArray[numKeys];
+
+	for(int i = 0; i < numKeys; i++){
+		int key;
+		fscanf(input, "%d", &key);
+		testArray[i] = key;
+	}
+
+//array holding original key order for use with heapSort after insertionSort changes our original array
+	int arrayCopy[numKeys]; 
+
+	printf("Array prior to sorting: \nIndex : Key \n");
+	for(int i = 0; i < numKeys; i++){
+		printf(" %d   :   %d \n", i, testArray[i]);
+		arrayCopy[i] = testArray[i];
+	}
+
+	printf("Array post-insertionSort: \nIndex : Key \n");
+	insertionSort(testArray, numKeys);
+	for(int i = 0; i < numKeys; i++){
+		printf(" %d   :   %d \n", i, testArray[i]);
+	}
+
+	printf("Array post-heapSort: \nIndex : Key \n");
+	heapSort(arrayCopy, numKeys);
+	for(int i = 0; i < numKeys; i++){
+		printf(" %d   :   %d \n", i, arrayCopy[i]);
+	}
+	fclose(input);  //close the file we opened
+}
+
+int main(int argc, char **argv){
+	if(argc == 1){
+	} else {
+		for(int i = 1; i < argc; i++){
+			openFile(argv[i]);
+		}
+	}
+}
+@

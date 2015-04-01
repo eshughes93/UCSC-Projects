@@ -1,0 +1,832 @@
+head	1.21;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.21
+date	2013.04.18.23.04.09;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2013.04.18.23.02.48;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2013.04.18.23.02.34;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2013.04.18.22.57.54;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2013.04.18.22.40.13;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2013.04.18.22.39.57;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2013.04.18.22.33.45;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2013.04.18.22.29.12;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2013.04.18.22.23.23;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2013.04.18.22.20.25;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2013.04.18.22.15.36;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2013.04.18.21.56.15;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2013.04.18.21.50.04;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2013.04.18.21.33.40;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2013.04.18.21.30.41;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2013.04.18.21.24.20;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2013.04.18.21.23.10;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2013.04.18.21.20.14;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2013.04.18.21.16.22;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2013.04.18.21.16.09;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2013.04.18.21.11.19;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.21
+log
+@-
+@
+text
+@//Evan Hughes [eshughes@@ucsc.edu]
+
+#include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "List.h"
+
+//struct for the node, and the typedef so we can refer to struct Node with a simple NodeType
+typedef struct Node {
+    long data;
+    struct Node* next;
+    struct Node* prev;
+} NodeType;
+
+//struct for the ADT handle, uses typedef for ease of access with ListType
+typedef struct ListHeader {
+    NodeType* first;
+    NodeType* last;
+    NodeType* curr;
+} ListType;
+
+//the list struct which is accessible by the client with a handle to the adt and a reference for the length of the linked list
+struct List{
+    ListType* header;
+    int length;
+};
+
+
+//List constructor, returns a new, empty list. 
+ListRef newList (void){
+    ListRef new = malloc(sizeof(struct List));
+    new->length = 0;
+    new->header = malloc (sizeof(ListType));
+    new->header->first = NULL;
+    new->header->last = NULL;
+    new->header->curr = NULL;
+    return new;
+}
+
+
+//deletes and frees the list of allocated memory
+void freeList(ListRef L){
+    while(L->header->first != NULL){
+        L->header->curr = L->header->first;
+        free(L->header->curr);
+        L->header->first = L->header->first->next;
+    }
+    free(L->header);
+	free(L);
+}
+
+
+
+/*** Access functions ***/
+
+//returns true if the list is empty
+int isEmpty(ListRef L){
+    if(L->length == 0)
+        return 1;
+    else
+        return 0;
+}
+
+// returns true is current == NULL
+int offEnd(ListRef L){
+    if(L->header->curr == NULL)
+        return 1;
+    else
+        return 0;
+}
+
+// returns true if current == first and !offEnd()
+int atFirst(ListRef L){
+    assert(!offEnd(L));
+    if(L->header->curr == L->header->first)
+        return 1;
+    else
+        return 0;
+}
+
+// returns true if current == last and !offEnd()
+int atLast(ListRef L) { 
+    assert(!offEnd(L));
+    if(L->header->curr == L->header->last)
+        return 1;
+    else
+        return 0;
+}
+
+// return the first element; pre: !isEmpty()
+long getFirst(ListRef L){ 
+    assert(!isEmpty(L));
+    printf("First data entry is %ld\n", L->header->first->data);
+    return L->header->first->data;
+}
+
+// return the last element; pre: !isEmpty()
+long getLast(ListRef L){ 
+    assert(!isEmpty(L));
+    printf("Last data entry is %ld\n", L->header->last->data);
+    return L->header->last->data;
+}
+
+// return the current element pre: !offEnd()
+long getCurrent(ListRef L){ 
+    assert(!offEnd(L));
+    printf("Curr data entry is %ld\n", L->header->curr->data);
+    return L->header->curr->data;
+}
+
+// return the length of the list
+int getLength(ListRef L){ 
+    printf("Length of the list is %d\n", L->length);
+    return L->length;
+}
+
+// return true iff the two lists have the same keys
+// in the same order
+int equals (ListRef A, ListRef B){
+    if(A->length != B->length){
+        printf("The lists are not identical\n");
+        return 0;
+    } else {
+        moveFirst(A);
+        moveFirst(B);
+        while(A->header->curr != NULL || B->header->curr != NULL){
+            if(A->header->curr-> data == B->header->curr->data){
+                A->header->curr = A->header->curr->next;
+                B->header->curr = B->header->curr->next;
+            } else {
+                break;
+            }
+        }
+        if(offEnd(A) && offEnd(B)){
+            printf("\nThe lists are identical.\n");
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    moveFirst(A);
+    moveFirst(B);
+}
+
+/*** Manipulation procedures ***/
+
+// make the list empty. Post: isEmpty()
+void makeEmpty(ListRef L){ 
+    L->header->first = NULL;
+    L->header->last = NULL;
+    L->header->curr = NULL;
+    L->length = 0;
+}
+
+// set current marker to the first element in the list
+// Pre: !isEmpty(); Post: !offEnd()
+void moveFirst(ListRef L){ 
+    if(!isEmpty(L))
+        L->header->curr = L->header->first;
+}
+
+// set current marker to the last element in the list
+// Pre: !isEmpty(); Post: !offEnd()
+void moveLast(ListRef L){
+    if(!isEmpty(L))
+        L->header->curr = L->header->last;
+}
+
+
+// set current marker one step backward.
+// Pre: !offEnd(); Post: offEnd() only if atFirst() was true
+void movePrev(ListRef L){
+    int off = 0;
+    if(atFirst(L)){
+        off = 1;
+    }
+    if(!offEnd(L)){
+        L->header->curr = L->header->curr->prev;
+    } else {
+        printf("Cannot movePrev, curr is offEnd\n");
+    }
+    if(off){
+        assert(offEnd(L));
+    }
+}
+
+// set current marker one step forward.
+// Pre: !offEnd(); Post: offEnd() only if atLast() was true
+void moveNext(ListRef L){ 
+    int off = 0;
+    if(atLast(L)){
+        off = 1;
+    }
+    if(!offEnd(L)){
+        L->header->curr = L->header->curr->next;
+    } else {
+        printf("Cannot moveNext, curr is offEnd\n");
+    }
+    if(off){
+        assert(offEnd(L));
+    }
+}
+
+//Inserts into the list in a sorted order, from least to greatest
+void sortedInsert(ListRef L, long data){
+	NodeType* newNode = malloc(sizeof(struct Node));
+	newNode->data = data;
+	assert(newNode != NULL);
+	if(isEmpty(L)){
+        L->header->first = L->header->curr = L->header->last = newNode;
+        L->header->first->prev = NULL;
+        L->header->last->next = NULL;
+	} else {
+		moveFirst(L);
+		while(L->header->curr != NULL){
+			if(data > L->header->curr->data)
+				L->header->curr = L->header->curr->next;
+			else
+				break;
+		}
+		if(offEnd(L)){
+			moveLast(L);       
+			L->header->last->next = newNode;
+			newNode->prev = L->header->last;
+			L->header->last = newNode;
+			L->header->last->next = NULL;
+		} else if(atFirst(L)){
+			L->header->first->prev = newNode;
+			newNode->next = L->header->first;
+			L->header->first = newNode;
+			L->header->first->prev = NULL;
+		} else {
+			newNode->next = L->header->curr;
+			newNode->prev = L->header->curr->prev;
+			L->header->curr->prev->next = newNode;
+			L->header->curr->prev = newNode;	
+		}
+	}
+	L->header->curr = newNode;
+	L->length++;
+	assert(!offEnd(L));
+	assert(!isEmpty(L));
+}
+
+
+// Inserts new element before first
+// Post: !isEmpty()
+void insertBeforeFirst(ListRef L, long data){
+    NodeType* newNode = malloc(sizeof(struct Node));
+    newNode->data = data;
+    assert(newNode != NULL);
+    if(isEmpty(L)){
+        //printf("List is empty\n");
+        L->header->first = L->header->curr = L->header->last = newNode;
+        L->header->first->prev = NULL;
+        L->header->last->next = NULL;
+    } else {
+        L->header->first->prev = newNode;
+        newNode->next = L->header->first;
+        L->header->first = newNode;
+        L->header->first->prev = NULL;
+    }
+    L->header->curr = newNode;
+    L->length++;
+    assert(!isEmpty(L));
+}
+
+// Inserts new element after last one
+// Post: !isEmpty()
+void insertAfterLast(ListRef L, long data){ 
+    NodeType* newNode = malloc(sizeof(struct Node));
+    newNode->data = data;
+    assert(newNode != NULL);
+    if(isEmpty(L)){
+        //printf("List is empty\n");
+        L->header->first = L->header->curr = L->header->last = newNode;
+        L->header->first->prev = NULL;
+        L->header->last->next = NULL;
+    } else {
+        L->header->last->next = newNode;
+        newNode->prev = L->header->last;
+        L->header->last = newNode;
+        L->header->last->next = NULL;
+    }
+    L->header->curr = newNode;
+    L->length++;
+    assert(!isEmpty(L));
+}
+
+// Inserts new element before current one
+// Pre: !offEnd(); Post: !isEmpty(), !offEnd()
+void insertBeforeCurrent(ListRef L, long data){
+    NodeType* newNode = malloc(sizeof(struct Node));
+    newNode->data = data;
+    NodeType* curr = L->header->curr;
+    if(isEmpty(L)){
+        printf("List is empty\n");
+        L->header->first = L->header->curr = L->header->last = newNode;
+        L->header->first->prev = NULL;
+        L->header->last->next = NULL;
+    } else if(atFirst(L)){
+		L->header->first->prev = newNode;
+        newNode->next = L->header->first;
+        L->header->first = newNode;
+        L->header->first->prev = NULL;
+	} else {
+        newNode->next = curr;
+        newNode->prev = curr->prev;
+        curr->prev->next = newNode;
+        curr->prev = newNode;
+    }
+    L->header->curr = newNode;
+    L->length++;
+    assert(!isEmpty(L));
+    assert(!offEnd(L));
+}
+
+// Inserts new element after current one
+// Pre: !offEnd(); Post: !isEmpty(), !offEnd()
+void insertAfterCurrent(ListRef L, long data){
+    NodeType* newNode = malloc(sizeof(struct Node));
+    newNode->data = data;
+    NodeType* curr = L->header->curr;
+    if(isEmpty(L)){
+        printf("List is empty\n");
+        L->header->first = L->header->curr = L->header->last = newNode;
+        L->header->first->prev = NULL;
+        L->header->last->next = NULL;
+    } else if(atLast(L)){
+        L->header->last->next = newNode;
+        newNode->prev = L->header->last;
+        L->header->last = newNode;
+        L->header->last->next = NULL;
+    } else {
+        newNode->prev = curr;
+        newNode->next = curr->next;
+        curr->next->prev = newNode;
+        curr->next = newNode;
+    }
+    L->header->curr = newNode;
+    L->length++;
+    assert(!isEmpty(L));
+    assert(!offEnd(L));
+}
+
+// delete the first element. Pre: !isEmpty()
+void deleteFirst(ListRef L){
+    assert(!isEmpty(L));
+    NodeType* tmp = L->header->first;
+    L->header->first->next->prev = NULL;
+    L->header->first = L->header->first->next;
+    free(tmp);
+    L->length--;
+}
+
+// delete the last element. Pre: !isEmpty()
+void deleteLast(ListRef L){ 
+    assert(!isEmpty(L));
+    NodeType* tmp = L->header->last;
+    L->header->last->prev->next = NULL;
+    L->header->last = L->header->last->prev;
+    free(tmp);
+    L->length--;
+}
+
+// delete the current element.
+// Pre: !isEmpty(), !offEnd(); Post: offEnd()
+void deleteCurrent(ListRef L){
+    if(offEnd(L)){
+        printf("Cannot delete current. Current is offEnd.\n");
+    } else {
+        assert(!isEmpty(L));
+        assert(!offEnd(L));
+        NodeType* tmp = L->header->curr;
+        if(atFirst(L)){
+            deleteFirst(L);
+        } else {
+            L->header->curr->prev->next = L->header->curr->next;
+            L->header->curr->next->prev = L->header->curr->prev;
+            L->header->curr->next = NULL;
+            L->header->curr->prev = NULL;
+            L->header->curr = NULL;
+            free(tmp);
+            assert(offEnd(L));
+        }
+        L->length--;
+    }
+}
+
+/*** Other operations ***/
+
+void printList(ListRef L){
+if(isEmpty(L)){
+} else {
+if(offEnd(L)){
+moveLast(L);
+}
+assert(!offEnd(L));
+    int nodeNum = 0;
+    NodeType* holder = L->header->curr;
+    if(isEmpty(L)){
+        printf("The list is empty\n");
+    } else {
+        moveFirst(L);
+        while(L->header->curr != NULL){
+            long showData = L->header->curr->data;
+            //printf("Node %d data: %ld \n", nodeNum, showData);
+	    printf("%ld ", showData);
+            nodeNum++;
+            moveNext(L);
+        }
+    }
+    L->header->curr = holder;
+}
+}
+ListRef copyList(ListRef L){
+    ListRef new = newList();
+    moveFirst(L);
+    NodeType* holder = L->header->curr;
+    while(L->header->curr != NULL){
+        sortedInsert(new, L->header->curr->data);
+        L->header->curr = L->header->curr->next;
+    }
+    L->header->curr = holder;
+    return new;
+}
+@
+
+
+1.20
+log
+@-
+@
+text
+@d353 1
+d363 1
+d386 1
+@
+
+
+1.19
+log
+@-
+@
+text
+@d121 1
+a121 1
+        printf("The lists are not identical"\n");
+@
+
+
+1.18
+log
+@-
+@
+text
+@d121 1
+@
+
+
+1.17
+log
+@-
+@
+text
+@d53 1
+@
+
+
+1.16
+log
+@-
+@
+text
+@d112 1
+a112 1
+    printf("Length of the list is %ld\n", L->length);
+@
+
+
+1.15
+log
+@-
+@
+text
+@d365 1
+a365 1
+    if(offEnd){
+@
+
+
+1.14
+log
+@-
+@
+text
+@d139 2
+d365 2
+a366 5
+    assert(!isEmpty(L));
+    assert(!offEnd(L));
+    NodeType* tmp = L->header->curr;
+    if(atFirst(L)){
+        deleteFirst(L);
+d368 14
+a381 7
+        L->header->curr->prev->next = L->header->curr->next;
+        L->header->curr->next->prev = L->header->curr->prev;
+        L->header->curr->next = NULL;
+        L->header->curr->prev = NULL;
+        L->header->curr = NULL;
+        free(tmp);
+        assert(offEnd(L));
+d414 1
+a414 1
+    //NodeType* holder = L->header->curr;
+d419 1
+a419 1
+    //L->header->curr = holder;
+@
+
+
+1.13
+log
+@-
+@
+text
+@a118 2
+    NodeType* AHolder = &A->header->curr;
+    NodeType* BHolder = &B->header->curr;
+a138 2
+    A->header->curr = AHolder;
+    B->header->curr = BHolder;
+d408 1
+a408 1
+    NodeType* holder = L->header->curr;
+d413 1
+a413 1
+    L->header->curr = holder;
+@
+
+
+1.12
+log
+@-
+@
+text
+@d119 2
+a120 2
+    NodeType* AHolder = A->header->curr;
+    NodeType* BHolder = B->header->curr;
+@
+
+
+1.11
+log
+@-
+@
+text
+@d119 2
+d135 1
+a135 1
+            printf("The lists are identical.\n");
+d141 2
+@
+
+
+1.10
+log
+@-
+@
+text
+@a44 2
+        //long tmpData = L->header->curr->data;
+        //free(tmpData);
+d119 1
+a119 1
+    if(A->length != B->length)
+d121 18
+a138 1
+
+@
+
+
+1.9
+log
+@-
+@
+text
+@d351 11
+a361 7
+    L->header->curr->prev->next = L->header->curr->next;
+    L->header->curr->next->prev = L->header->curr->prev;
+    L->header->curr->next = NULL;
+    L->header->curr->prev = NULL;
+    L->header->curr = NULL;
+    free(tmp);
+    assert(offEnd(L));
+@
+
+
+1.8
+log
+@-
+@
+text
+@d389 1
+d394 1
+@
+
+
+1.7
+log
+@-
+@
+text
+@d366 1
+a366 1
+moveFirst(L);
+@
+
+
+1.6
+log
+@-
+@
+text
+@d386 9
+a394 1
+//ListRef copyList(ListRef L);
+@
+
+
+1.5
+log
+@-
+@
+text
+@d330 1
+d333 1
+d350 1
+a350 1
+    
+d356 1
+a356 1
+    free(L->header->curr);
+@
+
+
+1.4
+log
+@-
+@
+text
+@d337 1
+d340 1
+d348 1
+@
+
+
+1.3
+log
+@-
+@
+text
+@d360 3
+d373 1
+a373 1
+			printf("%ld ", showData);
+d379 1
+a379 1
+	}
+@
+
+
+1.2
+log
+@-
+@
+text
+@d94 1
+a94 1
+    printf("First data entry is %d\n", L->header->first->data);
+d101 1
+a101 1
+    printf("Last data entry is %d\n", L->header->last->data);
+d108 1
+a108 1
+    printf("Curr data entry is %d\n", L->header->curr->data);
+d114 1
+a114 1
+    printf("Length of the list is %d\n", L->length);
+@
+
+
+1.1
+log
+@-
+@
+text
+@d94 1
+a94 1
+    //printf("First data entry is %d\n", L->header->first->data);
+d101 1
+a101 1
+    //printf("Last data entry is %d\n", L->header->last->data);
+d108 1
+a108 1
+    //printf("Curr data entry is %d\n", L->header->curr->data);
+@

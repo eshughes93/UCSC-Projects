@@ -1,0 +1,246 @@
+<!-- Evan Hughes CMPS112 Homework 4 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HW4</title><meta charset="utf-8">
+    <style>
+    .d6 { color: #000000; font-size: 74px; }
+    body,div { background-color: #eee; font-family: sans; padding: 1em; }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="from" />
+        <select id="fromUnit">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+        </select>
+        =
+        <input type="text" id="to" /> 
+        <select id="toUnit">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+        </select>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <p> 
+        Yatzy!
+    </p>
+    <div>
+        <button id="restart">Restart</button>
+        <p id="score">Score: _ (_ dice with _ dots each)</p>
+        <p id="rolls">5 rolls left</p>
+        <div id="dice"></div>
+    </div>
+</body>
+
+</html>
+<!-- JavaScript Code -->
+<script>
+
+// --------------------- Questions 1 - 4 -------------------------------
+$(function(){
+    $("#from, #to").keyup(function(){
+        runConversion(this.id)
+    });
+    $("#fromUnit,#toUnit").change(function(){
+        if(this.id === "fromUnit"){
+            runConversion("to");
+        } else {
+            runConversion("from");
+        }
+    });
+});
+/**
+ * cToX takes in a value of celsius, and a t indicating the type
+ * of temperature to convert to, and returns the appropriate conversion.
+ */
+ function cToX(c,t){
+    var x;
+    switch(t){
+        case "f":
+        x = (c * 1.8) + 32;
+        break;
+        case "k":
+        x = +c + 273;
+        break;
+        default:
+        x = c;
+        break;
+    }
+    return x;
+}
+/**
+ * convert takes in the temperature to convert from, frm, the
+ * type of temperature frm is, t, and the type to convert to, to.
+ * It converts frm to celsius and then calls cToX, ultimately
+ * returning the appropriate conversion.
+ */
+ function convert(frm,t,to){
+    var from = frm;
+    var update;
+    switch(t){
+        case "c":
+        update = cToX(from,to);
+        break;
+        case "f":
+        from = (frm - 32) * (5/9);
+        update = cToX(from,to);
+        break;
+        case "k":
+        from = frm - 273;
+        update = cToX(from,to);
+        break;
+        default:
+        break;
+    }
+    return update;
+}
+function runConversion(id){
+    var fromtmp = $("#from").val();
+    var totmp = $("#to").val();
+    var fromtype = $("#fromUnit").val();
+    var totype = $("#toUnit").val();
+    if(id === "to"){
+        $("#from").val(convert(totmp,totype,fromtype));
+    } else {
+        $("#to").val(convert(fromtmp,fromtype,totype));
+    }
+}
+// ------------------ Question 5 ------------------
+function randInt(min, max) {
+    var rand = Math.random();
+    rand = rand*(max-min+1) + min;
+    return Math.floor(rand);
+}
+// ------------------ Question 6-----------------
+function createDice(sides){
+    return function(){ return randInt(1,sides)};
+}
+//--------------Questions 7 & 8-------------------
+function Dice() {
+        // creates a new instance
+        // should assign the "this.el" property to be a jQuery-wrapped
+        // <span> HTML element with the CSS class "d6" using one of the
+        // icons as inner text.
+        var dice = this;
+        var r = randInt(1,6);
+        dice.icons = "⚀⚁⚂⚃⚄⚅";
+        dice.el = $('<span>', {
+            html : dice.icons.charAt(r-1),
+            'class':'d6'
+        });
+        dice.el.click(function(){
+            dice.roll();
+        });
+        dice.dicevalue = r;
+    }
+
+    Dice.prototype.render = function() {
+        // updates the HTML represenation by changing the icon in the
+        // jQuery-wrapped element in the "this.el" property
+        this.el.html(this.icons.charAt(this.dicevalue-1));
+    }
+
+    Dice.prototype.roll = function() {
+        // rolls this die and updates the representation
+        this.dicevalue = randInt(1,6);
+        this.render();
+    }
+// ---------------Question 9--------------------
+function UnfairDice(){
+    Dice.call(this);
+}
+UnfairDice.prototype = Object.create(Dice.prototype);
+UnfairDice.prototype.roll = function(){
+    if(randInt(1,2) === 2){
+        this.dicevalue = 6;
+    } else {
+        this.dicevalue = randInt(1,5);
+    }
+    this.render();
+}
+// --------------------Question 10-----------------
+var rollsleft = 5;
+var game;
+//Restart game on button click
+$("#restart").click(function(){
+    rollsleft = 5;
+    $("#rolls").html(rollsleft + " rolls left");
+    $(".d6").remove();
+    game = new Yatzy();
+});
+//Setup webpage
+$(function(){
+    game = new Yatzy();
+});
+//Function to set up 5 YatzyDice objects
+//Also acts as game object to keep track
+//of dice and score
+function Yatzy(){
+    this.d1 = new YatzyDice();
+    this.d2 = new YatzyDice();
+    this.d3 = new YatzyDice();
+    this.d4 = new YatzyDice();
+    this.d5 = new YatzyDice();
+    this.dice = [this.d1, this.d2, this.d3, this.d4, this.d5];
+    $("#dice").append(this.d1.el, this.d2.el, this.d3.el, this.d4.el, this.d5.el);
+    this.updateScore();
+}
+Yatzy.prototype.updateScore = function (){
+    var one, two, three, four, five, six;
+    var diceCounts = [one, two, three, four, five, six];
+    for(var i = 0; i < diceCounts.length; ++i){
+        diceCounts[i] = 0;
+    }
+    var score = 0; 
+    for(var i = 0; i < this.dice.length; ++i){
+        diceCounts[this.dice[i].dicevalue - 1]++;
+    }
+    var highCount = 0;
+    var highDice = 0;
+    for(var i = 0; i < diceCounts.length; ++i){
+        if((diceCounts[i] >= highCount) && ((i+1) > highDice)){
+            highDice = i + 1;
+            highCount = diceCounts[i];
+        }
+    }
+    score = highCount * highDice;
+    if(highDice === 1){
+        $("#score").html("Score: " + score + " (" + highCount + " with " + highDice + " dot each)");
+    } else {
+        $("#score").html("Score: " + score + " (" + highCount + " with " + highDice + " dots each)");
+    }
+}
+function YatzyDice(){
+    Dice.call(this);
+}
+YatzyDice.prototype = Object.create(Dice.prototype);
+YatzyDice.prototype.roll = function(){
+    if(rollsleft > 0){
+        rollsleft--;
+        this.dicevalue = randInt(1,6);
+        this.render();
+        $("#rolls").html(rollsleft + " rolls left");
+    } else {
+        alert("No rolls left! Press restart to try again.");
+    }
+    game.updateScore();
+}
+//---------------------Question 11----------------------------
+
+function memoize(fn){
+    var computed = [];
+    return function(x){ 
+        if(computed[x] === undefined){
+            computed[x] = (fn(x));
+        } 
+        return computed[x];
+    }
+}
+</script>

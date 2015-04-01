@@ -1,0 +1,7 @@
+./yshell build Apr 15 2014 03:20:18
+%  Bad command.  Was a message printed, and the program continued?
+%  make file this is the first file
+%  make second file
+%  make third file with more stuff in it
+%  cat file
+file: 

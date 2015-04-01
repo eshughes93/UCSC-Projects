@@ -1,0 +1,25 @@
+Evan Hughes [eshughes@ucsc.edu]
+
+All work was done by myself, with some help from MSI.
+
+File descriptions:
+
+    List.h
+        
+        This is the header file for the List ADT. It gives users access to the functions which are implemented in List.c. It creates a ListRef which is a handle for the list adt, allowing the user to access the list without being able to access the actual list nodes. It also provides descriptions and pre/post conditions for each of the functions to be implemented in List.c.
+
+    List.c
+
+        This is the file where everything in the List.h header file is actually implemented. It creates the structs used in the List ADT, those being the nodes and list handle. It has functions to create new lists, delete lists, free the memory of said lists, and in general manipulate the list itself.
+
+    Listdr.c
+
+        This is the driver file for the List ADT. It creates a new list, enters data into it, copies that list to another list, shows they are identical, deletes nodes, compares lists again to show they are not identical, and finally frees the lists. It prints info to stdout as it goes so you can observe each of the functions being implemented successfully.
+
+    store.c
+
+        This is the main file for Program1. It takes in multiple files for input, and anaylzes them in order to know what to do. It creates an array with a size depending on the file input. This array is composed of linked lists, and each array index refers to a customerID, which range from 1 to the number of customers. Each linked list, corresponding to a specific customer, contains the information that tells you what books that customer has purchased.
+
+    Makefile
+        
+        The makefile allows the user to easily compile the List.c, List.h, store.c, and Listdr.c files, without having to retype the compile command numerous times. Simply using the "make" command will only compile the List.c, List.h, and store.c files, allowing you to use the main program. In order to use the List ADT driver program, use "make driver". 

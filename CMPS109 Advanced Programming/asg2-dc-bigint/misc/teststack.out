@@ -1,0 +1,24 @@
+
+Pushing loop:
+teststack
+foo
+bar
+baz
+qux
+quux
+
+Iteration loop:
+quux
+qux
+baz
+bar
+foo
+teststack
+
+Popping loop:
+quux
+qux
+baz
+bar
+foo
+teststack

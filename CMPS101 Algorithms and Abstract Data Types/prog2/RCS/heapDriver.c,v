@@ -1,0 +1,86 @@
+head	1.3;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.3
+date	2013.05.01.23.40.09;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2013.05.01.23.39.36;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2013.05.01.23.38.59;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@-
+@
+text
+@//Evan Hughes [eshughes@@ucsc.edu]
+#include<stdio.h>
+#include<stdlib.h>
+#include "heap.h"
+
+int main(int argc,char **argv){
+	//heap test = newHeap();
+	if(argc == 1){
+	} else {
+		for(int i = 1; i < argc; i++){
+			openFile(argv[i]);
+		}
+	}
+}
+
+void openFile(char *filename){
+	FILE *input = fopen(filename, "r");
+	int heapSize = 0;
+	if(input == NULL){
+		printf("error\n");
+	} else {
+		fscanf(input, "%d", &heapSize);
+	}
+	heapRef test = newHeap(heapSize);
+	for(int i = 0; i < heapSize; i++){
+		int key;
+		fscanf(input, "%d", &key);
+		insert(test, key);
+	}
+	fclose(input);
+}
+@
+
+
+1.2
+log
+@-
+@
+text
+@a16 1
+	heapRef test = newHeap();
+d24 1
+@
+
+
+1.1
+log
+@-
+@
+text
+@d2 2
+a3 1
+
+@

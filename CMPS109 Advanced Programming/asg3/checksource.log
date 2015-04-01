@@ -1,0 +1,7 @@
+checksource: improper character \x09 = ^I (tab)
+   file "Makefile~": 14 errors: lines 32, 35, 38--39, 42, 45, 48, 
+        52--53, 56--57, 60--61, 64
+checksource: line length > 72 characters
+   file "listmap.cpp~": 1 errors: line 88
+   file "main.cpp~": 1 errors: line 116
+checksource: TOTAL COMPLAINTS: 16

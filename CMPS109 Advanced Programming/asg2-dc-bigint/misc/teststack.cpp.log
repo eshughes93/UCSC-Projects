@@ -1,0 +1,42 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting teststack.cpp
+teststack.cpp: $Id: teststack.cpp,v 1.9 2014-04-09 17:29:51-07 - - $
+g++ -g -O0 -Wall -Wextra -std=gnu++11 teststack.cpp -o teststack -lm
+In file included from /opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/vector:64:0,
+                 from teststack.cpp:5:
+/opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/bits/stl_vector.h:230:54: error: 'typedef class std::reverse_iterator<__gnu_cxx::__normal_iterator<const std::basic_string<char>*, std::vector<std::basic_string<char>, std::allocator<std::basic_string<char> > > > > std::vector<std::basic_string<char>, std::allocator<std::basic_string<char> > >::const_reverse_iterator' is inaccessible
+       typedef std::reverse_iterator<const_iterator>  const_reverse_iterator;
+                                                      ^
+teststack.cpp:10:28: error: within this context
+ typedef iterstack<string>::const_reverse_iterator stack_ritor;
+                            ^
+In file included from /opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/vector:64:0,
+                 from teststack.cpp:5:
+/opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/bits/stl_vector.h: In function 'int main(int, char**)':
+/opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/bits/stl_vector.h:901:7: error: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::value_type = std::basic_string<char>]' is inaccessible
+       push_back(const value_type& __x)
+       ^
+teststack.cpp:19:25: error: within this context
+       stk.push_back (arg);
+                         ^
+teststack.cpp:22:40: error: 'itor' was not declared in this scope
+    for (const auto& elt: stk) cout << *itor << endl;
+                                        ^
+teststack.cpp:22:21: warning: unused variable 'elt' [-Wunused-variable]
+    for (const auto& elt: stk) cout << *itor << endl;
+                     ^
+In file included from /opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/vector:64:0,
+                 from teststack.cpp:5:
+/opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/bits/stl_vector.h:855:7: error: 'std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::back() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >; std::vector<_Tp, _Alloc>::reference = std::basic_string<char>&]' is inaccessible
+       back()
+       ^
+teststack.cpp:26:24: error: within this context
+       cout << stk.back() << endl;
+                        ^
+In file included from /opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/vector:64:0,
+                 from teststack.cpp:5:
+/opt/rh/devtoolset-2/root/usr/include/c++/4.8.1/bits/stl_vector.h:937:7: error: 'void std::vector<_Tp, _Alloc>::pop_back() [with _Tp = std::basic_string<char>; _Alloc = std::allocator<std::basic_string<char> >]' is inaccessible
+       pop_back()
+       ^
+teststack.cpp:27:20: error: within this context
+       stk.pop_back();
+                    ^

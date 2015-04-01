@@ -1,0 +1,2148 @@
+head	1.57;
+access;
+symbols;
+locks;
+comment	@// @;
+
+
+1.57
+date	2014.04.25.22.17.53;	author -;	state -;
+branches;
+next	1.56;
+
+1.56
+date	2014.04.23.00.52.07;	author -;	state -;
+branches;
+next	1.55;
+
+1.55
+date	2014.04.10.00.03.58;	author -;	state -;
+branches;
+next	1.54;
+
+1.54
+date	2014.04.10.00.02.07;	author -;	state -;
+branches;
+next	1.53;
+
+1.53
+date	2014.04.10.00.00.42;	author -;	state -;
+branches;
+next	1.52;
+
+1.52
+date	2014.04.10.00.00.13;	author -;	state -;
+branches;
+next	1.51;
+
+1.51
+date	2014.04.09.23.49.05;	author -;	state -;
+branches;
+next	1.50;
+
+1.50
+date	2014.04.09.23.48.18;	author -;	state -;
+branches;
+next	1.49;
+
+1.49
+date	2014.04.09.23.47.54;	author -;	state -;
+branches;
+next	1.48;
+
+1.48
+date	2014.04.09.23.46.21;	author -;	state -;
+branches;
+next	1.47;
+
+1.47
+date	2014.04.09.23.43.33;	author -;	state -;
+branches;
+next	1.46;
+
+1.46
+date	2014.04.09.02.15.00;	author -;	state -;
+branches;
+next	1.45;
+
+1.45
+date	2014.04.09.02.14.42;	author -;	state -;
+branches;
+next	1.44;
+
+1.44
+date	2014.04.09.02.08.39;	author -;	state -;
+branches;
+next	1.43;
+
+1.43
+date	2014.04.09.02.04.19;	author -;	state -;
+branches;
+next	1.42;
+
+1.42
+date	2014.04.09.02.04.03;	author -;	state -;
+branches;
+next	1.41;
+
+1.41
+date	2014.04.09.01.43.32;	author -;	state -;
+branches;
+next	1.40;
+
+1.40
+date	2014.04.09.01.36.15;	author -;	state -;
+branches;
+next	1.39;
+
+1.39
+date	2014.04.09.01.17.54;	author -;	state -;
+branches;
+next	1.38;
+
+1.38
+date	2014.04.09.01.06.03;	author -;	state -;
+branches;
+next	1.37;
+
+1.37
+date	2014.04.09.01.04.40;	author -;	state -;
+branches;
+next	1.36;
+
+1.36
+date	2014.04.09.00.52.38;	author -;	state -;
+branches;
+next	1.35;
+
+1.35
+date	2014.04.09.00.51.28;	author -;	state -;
+branches;
+next	1.34;
+
+1.34
+date	2014.04.09.00.49.59;	author -;	state -;
+branches;
+next	1.33;
+
+1.33
+date	2013.08.08.21.48.10;	author -;	state -;
+branches;
+next	1.32;
+
+1.32
+date	2013.07.18.20.10.05;	author -;	state -;
+branches;
+next	1.31;
+
+1.31
+date	2013.07.11.03.13.57;	author -;	state -;
+branches;
+next	1.30;
+
+1.30
+date	2013.07.09.21.48.02;	author -;	state -;
+branches;
+next	1.29;
+
+1.29
+date	2013.07.06.03.18.50;	author -;	state -;
+branches;
+next	1.28;
+
+1.28
+date	2013.06.27.20.10.11;	author -;	state -;
+branches;
+next	1.27;
+
+1.27
+date	2013.06.27.20.09.11;	author -;	state -;
+branches;
+next	1.26;
+
+1.26
+date	2013.06.27.19.39.10;	author -;	state -;
+branches;
+next	1.25;
+
+1.25
+date	2013.06.26.03.33.59;	author -;	state -;
+branches;
+next	1.24;
+
+1.24
+date	2013.06.26.03.33.43;	author -;	state -;
+branches;
+next	1.23;
+
+1.23
+date	2013.06.26.03.31.46;	author -;	state -;
+branches;
+next	1.22;
+
+1.22
+date	2013.06.26.03.31.33;	author -;	state -;
+branches;
+next	1.21;
+
+1.21
+date	2013.06.26.03.30.49;	author -;	state -;
+branches;
+next	1.20;
+
+1.20
+date	2013.06.26.03.30.21;	author -;	state -;
+branches;
+next	1.19;
+
+1.19
+date	2013.06.26.03.29.44;	author -;	state -;
+branches;
+next	1.18;
+
+1.18
+date	2013.06.26.03.28.12;	author -;	state -;
+branches;
+next	1.17;
+
+1.17
+date	2013.06.26.03.27.47;	author -;	state -;
+branches;
+next	1.16;
+
+1.16
+date	2013.06.26.00.23.35;	author -;	state -;
+branches;
+next	1.15;
+
+1.15
+date	2013.06.26.00.23.11;	author -;	state -;
+branches;
+next	1.14;
+
+1.14
+date	2013.06.26.00.22.51;	author -;	state -;
+branches;
+next	1.13;
+
+1.13
+date	2013.06.26.00.22.10;	author -;	state -;
+branches;
+next	1.12;
+
+1.12
+date	2013.06.26.00.21.40;	author -;	state -;
+branches;
+next	1.11;
+
+1.11
+date	2013.06.26.00.21.25;	author -;	state -;
+branches;
+next	1.10;
+
+1.10
+date	2013.06.26.00.18.09;	author -;	state -;
+branches;
+next	1.9;
+
+1.9
+date	2013.06.26.00.17.30;	author -;	state -;
+branches;
+next	1.8;
+
+1.8
+date	2013.06.26.00.16.56;	author -;	state -;
+branches;
+next	1.7;
+
+1.7
+date	2013.06.25.23.54.52;	author -;	state -;
+branches;
+next	1.6;
+
+1.6
+date	2013.06.25.22.19.54;	author -;	state -;
+branches;
+next	1.5;
+
+1.5
+date	2013.06.25.22.19.34;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2013.06.25.22.18.01;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2012.04.11.04.02.20;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2012.04.11.03.43.13;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2012.04.11.03.42.55;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.57
+log
+@-
+@
+text
+@/*
+Evan Hughes [eshughes@@ucsc.edu]
+Hadley Black [hablack@@ucsc.edu]
+Assignment 2 - bigint dc
+*/
+// $Id: bigint.cpp,v 1.116 2014-04-25 14:34:13-07 - - $
+
+#include <cassert>
+#include <cstdlib>
+#include <exception>
+#include <limits>
+#include <stack>
+#include <stdexcept>
+#include <string>
+#include <cmath>
+#include "bigint.h"
+#include "debug.h"
+
+using namespace std;
+
+typedef unsigned char digit_t;
+typedef vector<digit_t> bigvalue_t;
+
+//
+// constructor: creates an empty bigint 
+//
+bigint::bigint() {
+   
+   negative = false; 
+}
+
+//
+// copy constructor
+//
+bigint::bigint (const bigint& that) {
+  big_value = that.big_value;
+  negative = that.negative;
+  // CDTOR_TRACE;
+}
+
+
+bigint& bigint::operator= (const bigint& that) {
+   if (this == &that) return *this;
+   negative = that.negative;
+   big_value = that.big_value;
+   return *this;
+}
+
+bigint::~bigint() {
+   //CDTOR_TRACE;
+}
+
+//construct from a long
+bigint::bigint (long that) {
+   bigint new_b_i = bigint(to_string(that));
+   //CDTOR_TRACE;
+}
+
+//Construct from a string
+bigint::bigint (const string& that) {
+   assert (that.size() > 0);
+   negative = false; // set to posative by default 
+   int itor = that.size() - 1;
+   while (itor >= 0) {
+      if (that[itor] == '_'|| that[itor] == '-') { 
+         this->negative = true; break;
+      }
+
+      this->big_value.push_back(that[itor]);
+      --itor;
+   }
+   //long_value = isnegative ? - newval : + newval;
+   //CDTOR_TRACE;
+}
+
+//simple print for debugging
+void print(const bigvalue_t& num) {
+   for(int i = num.size() - 1; i >= 0; --i) {
+      cout << num[i];
+   } 
+}
+
+bigint bigint::operator+ (const bigint& that) const {
+   bigint result;
+   if(this->negative == that.negative) { 
+      result.big_value = do_bigadd(this->big_value, that.big_value);
+      result.set_sign(this->negative);
+   } else {
+      if(do_bigless(this->big_value, that.big_value)) {
+         result.big_value = do_bigsub(that.big_value, this->big_value);
+         result.negative = that.negative;   
+      } else {
+         result.big_value = do_bigsub(this->big_value, that.big_value);
+         result.set_sign(this->negative);
+      }
+   }
+   return result;
+}
+
+bigint bigint::operator- (const bigint& that) const {
+   bigint result; 
+   if(this->negative != that.negative) {
+      result.big_value = do_bigadd(this->big_value, that.big_value);
+      result.negative = this->negative;
+   } else {
+      if(do_bigless(this->big_value, that.big_value)) {
+         result.big_value = do_bigsub(that.big_value, this->big_value);
+         result.negative = not(that.negative);   
+      } else {
+        result.big_value = do_bigsub(this->big_value, that.big_value);
+        result.negative = (this->negative);
+      }
+   }
+   return result;
+}
+
+//
+// WHAT IS THIS SUPPOSED TO DO???
+//
+bigint bigint::operator-() const {
+   return *this;
+}
+
+//Converts a bigint to type long
+long bigint::to_long() const {
+   //max value of a long
+   bigint min = bigint("9223372036854775807"); 
+   if(!do_bigless(big_value, min.big_value)) {
+      throw range_error("to_long: out of range");
+   }
+   long long_val = 0;
+   for(size_t i = 0; i < big_value.size(); ++i) {
+      long_val = long_val + ((big_value[i] - '0') * (pow(10,i)));
+   }
+   if(negative) long_val -= (long_val * 2);
+   return long_val;
+}
+
+
+
+//
+// Multiplication algorithm.
+//
+bigint bigint::operator* (const bigint& that) const {
+   bigint result;
+   if(this->negative == that.negative){
+      result.negative = false;
+   } else {
+      result.negative = true;
+   }
+   result.big_value = do_bigmul(this->big_value, that.big_value); 
+   return result;
+}
+
+// following algorithm in project description 
+bigvalue_t bigint::do_bigmul(const bigvalue_t& left,
+                             const bigvalue_t& right) const {
+ 
+   bigvalue_t product;
+   for(size_t i = 0; i < (left.size() + right.size()); i++){
+      product.push_back('0');
+   }
+   unsigned int c, d; 
+   for(size_t i = 0; i < left.size(); ++i) {
+      c = 0;
+      for(size_t j = 0; j < right.size(); ++j) {
+         d = (product[i+j]-'0') + ((left[i]-'0') * (right[j]-'0')) + c;
+         product[i+j] = (d % 10) + '0';
+         c = d/10; // takes floor(d/10) by truncation like we want
+      }
+      product[i + right.size()] = (c + '0');
+   }
+   product = clear_zeros(product);
+   return product;
+}
+
+//Multiply by 2 algorithm for long division
+bigvalue_t bigint::mul_by_2 (bigvalue_t& big_value) const {
+   bigint two;
+   two.big_value.push_back('2');
+   bigvalue_t result = do_bigmul(big_value, two.big_value); 
+   return result;
+}
+
+//Division by 2 algorithm to aid with long division
+bigvalue_t bigint::div_by_2 (bigvalue_t& big_value) const {
+   bigvalue_t tmp = big_value;
+   bigvalue_t size_one;
+   size_one.push_back('1');
+   bigvalue_t size_two;
+   size_two.push_back('2');
+   bigvalue_t pow_ten = bigint("1024").big_value;
+   bigvalue_t pow_nine = bigint("512").big_value;
+   bigvalue_t pow_eight = bigint("256").big_value;
+   bigvalue_t quotient;
+   quotient.push_back('0');
+
+   for(;;) {
+      bigvalue_t pow_big = pow_ten;
+      bigvalue_t pow_mid = pow_nine;
+      bigvalue_t pow_less = pow_eight;
+      while(do_bigless(pow_big, tmp)) {
+         pow_big = clear_zeros(pow_big);
+         pow_mid = clear_zeros(pow_mid);
+         pow_less = clear_zeros(pow_less);
+         pow_big = mul_by_2(pow_big);
+         pow_mid = mul_by_2(pow_mid);
+         pow_less = mul_by_2(pow_less);
+      }
+      if(do_bigless(pow_mid, tmp)) {
+         tmp = do_bigsub(tmp, pow_mid);
+         quotient = do_bigadd(quotient, pow_less);
+      } else if(do_bigless(size_one, tmp)) {
+         tmp = do_bigsub(tmp, size_two);
+         quotient = do_bigadd(quotient, size_one);
+      }
+      if(tmp.empty()){ break; }
+      else if(tmp == size_one) { break; }       
+   }
+   return quotient;
+}
+
+//Long division algorithm
+bigint::quotient_remainder bigint::divide (const bigint& that) const {
+   bigvalue_t div = that.big_value;
+   div = clear_zeros(div);
+   if (div.empty()){ throw domain_error ("divide by 0"); }
+   bigvalue_t zero;
+   zero.push_back('0');
+   bigvalue_t divisor = that.big_value;
+   bigint quotient;
+   quotient.big_value.push_back('0');
+   bigint remainder; 
+   remainder.big_value = this->big_value;
+   bigvalue_t size_one;
+   size_one.push_back('1');
+   bigvalue_t power_of_2;
+   power_of_2.push_back('1');
+   while (do_bigless (divisor, remainder.big_value)) {
+      divisor = mul_by_2 (divisor);
+      power_of_2 = mul_by_2 (power_of_2);
+   }
+   while (do_bigless (zero, power_of_2)) {
+      if (do_bigless (divisor, remainder.big_value)) {
+         remainder.big_value = do_bigsub(remainder.big_value, divisor);
+         quotient.big_value = do_bigadd(quotient.big_value, power_of_2);
+      }
+      divisor = div_by_2 (divisor);
+      power_of_2 = div_by_2 (power_of_2);
+   }
+   if(remainder.big_value == div) {
+      quotient.big_value = do_bigadd(quotient.big_value, size_one);
+      remainder.big_value = do_bigsub(remainder.big_value, div);
+   }
+   return {quotient, remainder};
+}
+
+
+bigint bigint::operator/ (const bigint& that) const {
+   return divide (that).first;
+}
+
+bigint bigint::operator% (const bigint& that) const {
+   return divide (that).second;
+}
+
+
+bool bigint::operator== (const bigint& that) const {
+   // check signs
+   if(this->negative!=that.negative) return false;
+   // check lengths
+   if(this->big_value.size()!=that.big_value.size()) return false;
+   // check digits
+   for(size_t i = this->big_value.size(); i>0; --i) {
+      if(this->big_value.at(i-1)!=that.big_value.at(i-1)){
+         return false;
+      }
+   } 
+   return true; 
+}
+
+bool bigint::operator< (const bigint& that) const {
+   // check signs
+   if(this->negative==that.negative) {
+      if(!(this->negative)) {
+         return do_bigless(this->big_value, that.big_value);  
+      } else {           
+         return !(do_bigless(this->big_value, that.big_value));  
+      }                
+   } else {
+        // if signs are not the same: 
+        if(this->negative)
+           return true;
+        else 
+           return false; 
+   }
+   return false; 
+}
+
+ostream& operator<< (ostream& out, const bigint& that) {
+   if(that.big_value.empty()){
+      out << "0";
+   } else {
+      if(that.negative) cout << "-";
+      for(size_t i = that.big_value.size(); i > 0; --i) {     
+         out << that.big_value.at(i - 1);
+      }
+   }
+   return out;
+}
+
+//Exponent algorithm
+bigint pow (const bigint& base, const bigint& exponent) {
+   DEBUGF ('^', "base = " << base << ", exponent = " << exponent);
+   bigint zero = bigint("0");
+   bigint one = bigint("1");
+   zero = zero.zero_clear(zero); 
+   if (base == zero){
+      return zero;
+   }
+   bigint base_copy = base;
+   long expt = exponent.to_long();
+   bigint result = bigint("1");
+   if (expt < 0) {
+      base_copy = one / base_copy;
+      expt = - expt;
+   }
+   while (expt > 0) {
+      if (expt & 1) { //odd
+         result = result * base_copy;
+         --expt;
+      } else { //even
+         base_copy = base_copy * base_copy;
+         expt /= 2;
+      }
+   }
+   DEBUGF ('^', "result = " << result);
+   return result;
+}
+
+// do_bigadd: adds left and right
+bigvalue_t bigint::do_bigadd (const bigvalue_t& left, 
+                              const bigvalue_t& right) const {
+   
+   bigvalue_t result;
+   unsigned int l_dig, r_dig, sum, carry;
+   carry = 0;
+   // note: iterate 1 more time then size to account for carry and 
+   //       assign 0's if necessary 
+   for(size_t i = 0; 
+       i <= max(left.size(), right.size()); 
+       ++i) {
+      // reset sum
+      sum = 0;
+      // get digits
+      if(i < left.size())
+         l_dig = left[i] - '0';
+      else 
+         l_dig = 0;
+      if(i < right.size()) 
+         r_dig = right[i] - '0';
+      else 
+         r_dig = 0;
+      // add digits (including carry from last iteration) 
+      sum = l_dig + r_dig + carry;
+      carry = 0;
+      if(sum > 9) { 
+         sum -= 10; carry = 1; 
+      }
+      result.push_back(sum + '0'); // make sure this is a char somehow?
+   }
+   result = clear_zeros(result);
+   return result; 
+}
+
+// do_bigsub: subtracts right from left
+bigvalue_t bigint::do_bigsub (const bigvalue_t& left, 
+                              const bigvalue_t& right) const {
+   bigvalue_t result;
+   int l_dig, r_dig, diff, borrow;
+   borrow = 0;
+   for(size_t i = 0; 
+       i < max(left.size(), right.size()); 
+       ++i) {
+      // reset diff
+      diff = 0;
+      // get digits
+      if(i < left.size()) 
+         l_dig = left[i] - '0';
+      else 
+         l_dig = 0;
+      if(i < right.size()) 
+         r_dig = right[i] - '0';
+      else 
+         r_dig = 0;
+
+      // subtract digits (including borrow from last iteration) 
+      diff = l_dig - r_dig + borrow;
+      borrow = 0;
+      if(diff < 0) { diff += 10; borrow = -1; }
+         result.push_back(diff + '0');
+   }
+   result = clear_zeros(result);
+   return result; 
+}
+
+// do_bigless: compares abs value of the 2 elements
+// returns true if left < right
+bool bigint::do_bigless(const bigvalue_t& left, 
+                        const bigvalue_t& right) const { 
+
+   if(left.size() < right.size()) return true; 
+   if(left.size() > right.size()) return false;
+     for(size_t i = left.size(); i > 0; --i) {     
+       if(left.at(i-1) < right.at(i-1)) return true;  
+       if(left.at(i-1) > right.at(i-1)) return false; 
+     }
+   return false;  
+}
+
+// clear_zeros(): clears leading 0's
+bigvalue_t bigint::clear_zeros (bigvalue_t big_num) const {
+   for(size_t i = big_num.size(); i > 0; --i) {
+      if(big_num[i-1] != '0') break;
+      else big_num.pop_back();
+   }
+
+   return big_num;
+}
+
+bigint bigint::zero_clear(bigint big) const{
+   for(size_t i = big.big_value.size(); i > 0; --i) {
+      if(big.big_value[i-1] != '0') 
+         break;
+      else 
+         big.big_value.pop_back();
+   }
+   return big;
+}
+@
+
+
+1.56
+log
+@-
+@
+text
+@d1 6
+a6 1
+// $Id: bigint.cpp,v 1.55 2014-04-09 17:03:58-07 - - $
+d14 2
+a15 2
+using namespace std;
+
+d19 4
+a22 1
+#define CDTOR_TRACE DEBUGF ('~', this << " -> " << long_value)
+d24 6
+a29 3
+bigint::bigint(){
+   CDTOR_TRACE;
+   negative = false;
+d32 7
+a38 5
+bigint::bigint (const bigint& that){
+   big_value = that.big_value;
+   negative = that.negative;
+   *this = that;
+   CDTOR_TRACE;
+d41 1
+d50 1
+a50 1
+   CDTOR_TRACE;
+d53 4
+a56 2
+bigint::bigint (long that): long_value (that) {
+   CDTOR_TRACE;
+d59 1
+d62 19
+a80 7
+   auto itor = that.cbegin();
+   bool isnegative = false;
+   if (*itor == '_') {isnegative = true; ++itor; }
+   int newval = 0;
+   while (itor != that.end()) newval = newval * 10 + *itor++ - '0';
+   long_value = isnegative ? - newval : + newval;
+   CDTOR_TRACE;
+a82 1
+
+d84 4
+a87 4
+   bigint sum;
+   if(this->negative == that.negative) {
+      sum.big_value = do_bigadd(this->big_value, that.big_value);
+      sum.set_sign(this->negative);
+d89 3
+a91 3
+      if(do_bigless(this->big_value, that.big_value)){
+         sum.big_value = do_bigsub(that.big_value, this->big_value);
+         sum.negative = that.negative;
+d93 2
+a94 2
+         sum.big_value = do_bigsub(this->big_value, that.big_value);
+         sum.set_sign(this->negative);
+d97 1
+a97 1
+   return sum;
+d101 8
+a108 5
+   bigint difference;
+   if(this->negative == that.negative){
+      if(do_bigless(this->big_value, that.big_value)){
+         difference.big_value = do_bigsub(that.big_value, this->big_value);
+         difference.negative = (!(that.negative));
+d110 3
+a112 5
+         difference.big_value = do_bigsub(this->bigvalue, that.big_value);
+         difference.set_sign(!(this->negative));
+      }  
+   } else {
+      difference = *this + that; //questionable
+d114 1
+d117 3
+a120 1
+   this->negative = !(this->negative);
+d124 1
+d126 11
+a136 5
+   if (*this <= bigint (numeric_limits<long>::min())
+    or *this > bigint (numeric_limits<long>::max()))
+               throw range_error ("to_long: out of range");
+   //convert to long
+   return long_value;
+d139 1
+a139 3
+bool abs_less (const long& left, const long& right) {
+   return left < right;
+}
+d145 29
+a173 2
+   bigint product;
+   product.big_value = do_bigmul(this->big_value, that.big_value);
+d177 6
+a182 7
+
+//
+// Division algorithm.
+//
+
+void mul_by_2 (bigvalue_t& big_value) {
+   big_value = do_bigmul(big_value, 2);
+d185 36
+a220 2
+void div_by_2 (bigvalue_t& big_value) {
+   big_value /= 2;
+d223 1
+a223 1
+
+d225 22
+a246 16
+   if (that == 0) throw domain_error ("divide by 0");
+   typedef long unumber;
+   static unumber zero = 0;
+   if (that == 0) throw domain_error ("bigint::divide");
+   unumber divisor = that.long_value;
+   unumber quotient = 0;
+   unumber remainder = this->long_value;
+   unumber power_of_2 = 1;
+   while (abs_less (divisor, remainder)) {
+      mul_by_2 (divisor);
+      mul_by_2 (power_of_2);
+   }
+   while (abs_less (zero, power_of_2)) {
+      if (not abs_less (remainder, divisor)) {
+         remainder = remainder - divisor;
+         quotient = quotient + power_of_2;
+d248 6
+a253 2
+      div_by_2 (divisor);
+      div_by_2 (power_of_2);
+d258 1
+d267 1
+d269 11
+a279 6
+   if(this->negative != that.negative) return false;
+   if(this->big_value.size() != that.big_value.size) return false;
+   for(size_t i = this->big_value.size(); i > 0; i--){
+      if(this->big_value[i-1] != that.big_value[i-1]) return false;
+   }
+  return true;
+d283 7
+a289 6
+   if(this->negative == that.negative){
+      if(!(this->negative)){
+         return do_bigless(this->big_value, that.big_value);
+      } else {
+         return !(do_bigless(this->big_value, that.big_value));
+      }
+d291 5
+a295 4
+      if(this->negative)
+         return true;
+      else
+         return false;
+d297 1
+a297 1
+   return false;
+d301 7
+a307 2
+   for(size_t i = that.big_value.size(); i > 0; i--){
+      out << that.big_value[i-1];
+d312 1
+a312 1
+
+d315 6
+a320 1
+   if (base == 0) return 0;
+d323 1
+a323 1
+   bigint result = 1;
+d325 1
+a325 1
+      base_copy = 1 / base_copy;
+d332 1
+a332 1
+      }else { //even
+d340 5
+a344 1
+bigvalue_t bigint::do_bigadd(const bigvalue_t& left, const bigvalue_t& right) const{
+d346 1
+a346 1
+   unsigned int ld, rd, sum, carry;
+d348 6
+a353 1
+   for(size_t i = 0; i <= max(left.size(), right.size()); i++){
+d355 1
+d357 1
+a357 1
+         ld = left[i];
+d359 7
+a365 6
+         ld = 0;
+      if(i < right.size())
+         rd = right[i];
+      else
+         rd = 0;
+      sum = ld + rd + carry;
+d367 2
+a368 3
+      if(sum > 9){
+         sum -= 10;
+         carry = 1;
+d370 1
+a370 1
+      result.push_back((unsigned char) sum);
+d372 2
+a373 2
+   clear_zeroes(result);
+   return result;
+d375 4
+a378 2
+//subtraction
+bigvalue_t bigint::do_bigsub(const bigvalue_t& left, const bigvalue_t& right) const{
+d380 1
+a380 1
+   unsigned int ld, rd, diff, borrow;
+d382 4
+a385 1
+   for(size_t i = 0; i <= max(left.size(), right.size()); i++){
+d387 7
+a393 2
+      if(i < left.size())
+         ld = left[i];
+d395 3
+a397 5
+         ld = 0;
+      if(i < right.size())
+         rd = right[i];
+      else
+         rd = 0;
+d400 2
+a401 5
+      if(diff < 0){
+         diff += 10;
+         borrow = -1;
+      }
+      result.push_back((unsigned char) diff);
+d403 2
+a404 2
+   clear_zeroes(result);
+   return result;
+d406 13
+a418 14
+//bigint multiplication
+bigvalue_t bigint::do_bigmul(const bigvalue_t& left, const bigvalue_t& right) const {
+   bigvalue_t product;
+   unsigned int c, d;
+   for(size_t i = 0; i < left.size(); i++){
+      c = 0;
+      for(size_t j = 0; j < right.size(); j++){
+         d = product[i+j] + (left[i] + '0') * (right[j] + '0') + c;
+         product[i+j] = d % 10;
+         c = d/10;
+      }
+      product[i+right.size()] = c;
+   }
+   return product;
+d420 6
+a425 10
+bool bigint::do_bigless(const bigvalue_t& left, const bigvalue_t& right) const{
+   if(left.size() < right.size())
+      return true;
+   if(left.size() > right.size())
+      return false;
+   for(size_t i = left.size(); i > 0; i--){
+      if(left[i-1] < right[i-1])
+         return true;
+      if(left[i-1] > right[i-1])
+         return false;
+d427 2
+a428 1
+   return false;
+d430 7
+a436 3
+void bigint::clear_zeroes(bigvalue_t bigvalue) const{
+   while(big_num.front() == '0'){
+      big_num.pop_back();
+d438 1
+a439 2
+
+
+@
+
+
+1.55
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.51 2014-04-09 16:49:05-07 - - $
+d16 1
+a16 1
+bigint::bigint(): long_value (0) {
+d18 1
+d21 3
+a23 1
+bigint::bigint (const bigint& that): long_value (that.long_value) {
+d30 2
+a31 1
+   this->long_value = that.long_value;
+d56 14
+a69 1
+   return this->long_value + that.long_value;
+d73 12
+a84 1
+   return this->long_value - that.long_value;
+d88 2
+a89 1
+   return -long_value;
+d96 1
+d108 3
+a110 1
+   return long_value * that.long_value;
+d113 1
+d118 2
+a119 2
+void mul_by_2 (long& long_value) {
+   long_value *= 2;
+d122 2
+a123 2
+void div_by_2 (long& long_value) {
+   long_value /= 2;
+d160 6
+a165 1
+   return this->long_value == that.long_value;
+d169 13
+a181 1
+   return this->long_value < that.long_value;
+d185 3
+a187 1
+   out << that.long_value;
+d214 86
+@
+
+
+1.54
+log
+@-
+@
+text
+@d41 1
+a41 1
+   const auto itor = that.cbegin();
+@
+
+
+1.53
+log
+@-
+@
+text
+@d41 1
+a41 1
+   auto const& itor = that.cbegin();
+@
+
+
+1.52
+log
+@-
+@
+text
+@d41 1
+a41 1
+   auto& itor = that.cbegin();
+@
+
+
+1.51
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.50 2014-04-09 16:48:18-07 - - $
+d41 1
+a41 1
+   const auto& itor = that.cbegin();
+@
+
+
+1.50
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.49 2014-04-09 16:47:54-07 - - $
+d41 1
+a41 1
+   auto& itor = that.cbegin();
+@
+
+
+1.49
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.47 2014-04-09 16:43:33-07 - - $
+d41 1
+a41 1
+   const auto& itor = that.cbegin();
+@
+
+
+1.48
+log
+@-
+@
+text
+@d41 1
+a41 1
+   string::const_iterator itor = that.cbegin();
+d45 1
+a45 1
+   for (; itor != that.end(); ++itor) newval = newval * 10 + *itor - '0';
+@
+
+
+1.47
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.46 2014-04-08 19:15:00-07 - - $
+d41 1
+a41 1
+   string::const_iterator itor = that.begin();
+@
+
+
+1.46
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.45 2014-04-08 19:14:42-07 - - $
+d40 1
+a41 1
+   const string::const_iterator end = that.end();
+d45 1
+a45 1
+   for (; itor != end; ++itor) newval = newval * 10 + *itor - '0';
+@
+
+
+1.45
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.44 2014-04-08 19:08:39-07 - - $
+d94 1
+a94 1
+quotient_remainder bigint::divide (const bigint& that) const {
+@
+
+
+1.44
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.43 2014-04-08 19:04:19-07 - - $
+d94 1
+a94 1
+quo_rem bigint::divide (const bigint& that) const {
+d119 1
+a119 1
+   return divide (that).quotient;
+d123 1
+a123 1
+   return divide (that).remainder;
+@
+
+
+1.43
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.42 2014-04-08 19:04:03-07 - - $
+d94 1
+a94 1
+bigint bigint::divide (const bigint& that, const div_rem_op op) const {
+d115 1
+a115 6
+   switch (op) {
+      case QUOTIENT: return quotient;
+      case REMAINDER: return remainder;
+   }
+   assert (false and "Not possible to get here.");
+   return 0;
+d119 1
+a119 1
+   return divide (that, QUOTIENT);
+d123 1
+a123 1
+   return divide (that, REMAINDER);
+@
+
+
+1.42
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.41 2014-04-08 18:43:32-07 - - $
+d3 1
+@
+
+
+1.41
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.40 2014-04-08 18:36:15-07 - - $
+d118 2
+@
+
+
+1.40
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.39 2014-04-08 18:17:54-07 - - $
+d15 1
+a15 1
+bigint::bigint (): long_value (0) {
+d58 1
+a58 1
+bigint bigint::operator- () const {
+d62 1
+a62 1
+long bigint::to_long () const {
+@
+
+
+1.39
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.38 2014-04-08 18:06:03-07 - - $
+a7 1
+
+@
+
+
+1.38
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.37 2014-04-08 18:04:40-07 - - $
+d64 2
+a65 2
+   if (*this <= numeric_limits<long>::min()
+    or *this > numeric_limits<long>::max())
+@
+
+
+1.37
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.36 2014-04-08 17:52:38-07 - - $
+d65 1
+a65 1
+    || *this > numeric_limits<long>::max())
+@
+
+
+1.36
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.35 2014-04-08 17:51:28-07 - - $
+d20 1
+a20 1
+bigint::bigint (const bigint &that): long_value (that.long_value) {
+d25 1
+a25 1
+bigint &bigint::operator= (const bigint &that) {
+d39 1
+a39 1
+bigint::bigint (const string &that) {
+d51 1
+a51 1
+bigint bigint::operator+ (const bigint &that) const {
+d55 1
+a55 1
+bigint bigint::operator- (const bigint &that) const {
+d70 1
+a70 1
+bool abs_less (const long &left, const long &right) {
+d77 1
+a77 1
+bigint bigint::operator* (const bigint &that) const {
+d85 1
+a85 1
+void mul_by_2 (long &long_value) {
+d89 1
+a89 1
+void div_by_2 (long &long_value) {
+d94 1
+a94 1
+bigint bigint::divide (const bigint &that, const div_rem_op op) const {
+d121 1
+a121 1
+bigint bigint::operator/ (const bigint &that) const {
+d125 1
+a125 1
+bigint bigint::operator% (const bigint &that) const {
+d129 1
+a129 1
+bool bigint::operator== (const bigint &that) const {
+d133 1
+a133 1
+bool bigint::operator< (const bigint &that) const {
+d137 1
+a137 1
+ostream &operator<< (ostream &out, const bigint &that) {
+d143 1
+a143 1
+bigint pow (const bigint &base, const bigint &exponent) {
+@
+
+
+1.35
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.34 2014-04-08 17:49:59-07 - - $
+d144 1
+a144 1
+   TRACE ('^', "base = " << base << ", exponent = " << exponent);
+d162 1
+a162 1
+   TRACE ('^', "result = " << result);
+@
+
+
+1.34
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.33 2013-08-08 14:48:10-07 - - $
+d14 1
+a14 1
+#define CDTOR_TRACE TRACE ('~', this << " -> " << long_value)
+@
+
+
+1.33
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.32 2013-07-18 13:10:05-07 - - $
+d12 1
+a12 1
+#include "trace.h"
+@
+
+
+1.32
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.31 2013-07-10 20:13:57-07 - - $
+d108 1
+a108 1
+      if (! abs_less (remainder, divisor)) {
+@
+
+
+1.31
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.30 2013-07-09 14:48:02-07 - - $
+d98 1
+a98 1
+   if (that == 0) throw domain_error ("unumber::divide");
+@
+
+
+1.30
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.29 2013-07-05 20:18:50-07 - - $
+d145 1
+@
+
+
+1.29
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.28 2013-06-27 13:10:11-07 - - $
+d41 1
+a41 1
+   string::const_iterator end = that.end();
+@
+
+
+1.28
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.27 2013-06-27 13:09:11-07 - - $
+d50 1
+d93 1
+d142 1
+@
+
+
+1.27
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.26 2013-06-27 12:39:10-07 - - $
+d69 1
+a69 1
+bool bigint::abs_less (const long &left, const long &right) {
+d84 1
+a84 1
+void bigint::mul_by_2 (long &long_value) {
+d88 1
+a88 1
+void bigint::div_by_2 (long &long_value) {
+@
+
+
+1.26
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.25 2013-06-25 20:33:59-07 - - $
+a68 8
+void bigint::mul_by_2 () {
+   this->long_value *= 2;
+}
+
+void bigint::div_by_2 () {
+   this->long_value /= 2;
+}
+
+d83 9
+d102 2
+a103 2
+      divisor *= 2;
+      power_of_2 *= 2;
+d106 1
+a106 1
+      if (divisor <= remainder) {
+d110 2
+a111 2
+      divisor /= 2;
+      power_of_2 /= 2;
+@
+
+
+1.25
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.24 2013-06-25 20:33:43-07 - - $
+a138 1
+
+@
+
+
+1.24
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.23 2013-06-25 20:31:46-07 - - $
+d77 1
+a77 1
+static bool bigint::abs_less (const long &left, const long &right) {
+@
+
+
+1.23
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.22 2013-06-25 20:31:33-07 - - $
+d77 1
+a77 1
+static bool abs_less (const long &left, const long &right) {
+@
+
+
+1.22
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.21 2013-06-25 20:30:49-07 - - $
+d104 1
+a104 1
+   while (abs_less (zero, power_of_2) {
+@
+
+
+1.21
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.20 2013-06-25 20:30:21-07 - - $
+d101 2
+a102 2
+      divisor.mul_by_2()
+      power_of_2.mul_by_2()
+d109 2
+a110 2
+      divisor.div_by_2();
+      power_of_2.div_by_2();
+@
+
+
+1.20
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.19 2013-06-25 20:29:44-07 - - $
+d77 1
+a77 1
+static bool abs_less (const long &left, const long &right) const {
+@
+
+
+1.19
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.18 2013-06-25 20:28:12-07 - - $
+d77 1
+a77 2
+static bool abs_less (const long_value &left,
+                      const long_value &right) const {
+@
+
+
+1.18
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.17 2013-06-25 20:27:47-07 - - $
+a61 4
+bool bigint::abs_less (const bigint &that) const {
+   return long_value < that.long_value;
+}
+
+d77 2
+a78 2
+static bool abs_less (const long_value left,
+                      const long_value right) const {
+@
+
+
+1.17
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.16 2013-06-25 17:23:35-07 - - $
+d77 1
+a77 1
+void bigint::mul_by_2 () {
+@
+
+
+1.16
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.15 2013-06-25 17:23:11-07 - - $
+d77 9
+d105 3
+a107 3
+   while (divisor < remainder) {
+      divisor *= 2;
+      power_of_2 *= 2;
+d109 1
+a109 1
+   while (power_of_2 > zero) {
+d114 2
+a115 2
+      divisor /= 2;
+      power_of_2 /= 2;
+@
+
+
+1.15
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.14 2013-06-25 17:22:51-07 - - $
+d115 1
+a115 1
+   return div_rem (that).first;
+d119 1
+a119 1
+   return div_rem (that).second;
+@
+
+
+1.14
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.13 2013-06-25 17:22:10-07 - - $
+d108 1
+a108 1
+   switch (div_rem) {
+@
+
+
+1.13
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.12 2013-06-25 17:21:40-07 - - $
+d97 2
+a98 2
+      divisor.mul_by_2();
+      power_of_2.mul_by_2();
+d105 2
+a106 2
+      divisor.div_by_2();
+      power_of_2.div_by_2();
+@
+
+
+1.12
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.11 2013-06-25 17:21:25-07 - - $
+d91 1
+a91 1
+   if (that == 0) throw zero_divide ("unumber::divide");
+@
+
+
+1.11
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.10 2013-06-25 17:18:09-07 - - $
+d89 1
+a89 1
+   typedef unumber long;
+@
+
+
+1.10
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.9 2013-06-25 17:17:30-07 - - $
+d14 1
+a14 1
+#define CDTOR_TRACE TRACE ('~', this << " -> " << small_value)
+d16 1
+a16 1
+bigint::bigint (): small_value (0) {
+d20 1
+a20 1
+bigint::bigint (const bigint &that): small_value (that.small_value) {
+d27 1
+a27 1
+   this->small_value = that.small_value;
+d35 1
+a35 1
+bigint::bigint (long that): small_value (that) {
+d46 1
+a46 1
+   small_value = isnegative ? - newval : + newval;
+d51 1
+a51 1
+   return this->small_value + that.small_value;
+d55 1
+a55 1
+   return this->small_value - that.small_value;
+d59 1
+a59 1
+   return -small_value;
+d63 1
+a63 1
+   return small_value < that.small_value;
+d70 1
+a70 1
+   return small_value;
+d74 1
+a74 1
+   this->small_value *= 2;
+d81 1
+a81 1
+   return small_value * that.small_value;
+d89 1
+d92 1
+a92 1
+   unumber divisor = that;
+d94 1
+a94 1
+   unumber remainder = *this;
+d123 1
+a123 1
+   return this->small_value == that.small_value;
+d127 1
+a127 1
+   return this->small_value < that.small_value;
+d131 1
+a131 1
+   out << that.small_value;
+@
+
+
+1.9
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.7 2013-06-25 16:54:52-07 - - $
+d81 1
+a81 2
+   bigint result = 0;
+   return result;
+@
+
+
+1.8
+log
+@-
+@
+text
+@d73 2
+a74 2
+bigint bigint::mul_by_2 () {
+   return this->small_value *= 2;
+@
+
+
+1.7
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.6 2013-06-25 15:19:54-07 - - $
+d35 1
+a35 1
+bigint::bigint (int that): small_value (that) {
+d62 2
+a63 3
+int bigint::abscompare (const bigint &that) const {
+   return abs (this->small_value) < abs (that.small_value) ? -1
+        : abs (this->small_value) > abs (that.small_value) ? +1 : 0;
+d66 4
+a69 4
+int bigint::smallint () const {
+   if (*this < numeric_limits<int>::min()
+    || *this > numeric_limits<int>::max())
+               throw range_error ("smallint: out of range");
+a76 6
+static bigpair popstack (stack <bigpair> &egyptstack) {
+   bigpair result = egyptstack.top ();
+   egyptstack.pop();
+   return result;
+}
+
+a80 8
+   bigint top = that;
+   bigint count = 1;
+   TRACE ('*', *this << " * " << that);
+   stack <bigpair> egyptstack;
+   bigint a; // junk code -- delete
+   bigint b; // junk code -- delete
+   egyptstack.push (pair<bigint, bigint> (a, b)); // junk code -- delete
+   popstack (egyptstack); // junk to suppress a warning
+a81 1
+   if ((*this < 0) != (that < 0)) result = - result;
+d88 24
+a111 9
+bigpair bigint::divide (const bigint &that) const {
+   if (that == 0) throw range_error ("divide by 0");
+   bigint count = 1;
+   bigint top = abs (that.small_value);
+   TRACE ('/', *this << " /% " << that);
+   stack <bigpair> egyptstack;
+   bigint quotient = 0;
+   bigint remainder = abs (this->small_value);
+   return bigpair (quotient, remainder);
+d122 1
+a122 1
+bool bigint::operator == (const bigint &that) const {
+d126 1
+a126 1
+bool bigint::operator < (const bigint &that) const {
+a129 12
+#define INT_LEFT(RESULT,OPER) \
+   RESULT operator OPER (const int left, const bigint &right) { \
+      return bigint (left) OPER right; \
+   }
+INT_LEFT (bigint, +)
+INT_LEFT (bigint, -)
+INT_LEFT (bigint, *)
+INT_LEFT (bigint, /)
+INT_LEFT (bigint, %)
+INT_LEFT (bool, ==)
+INT_LEFT (bool, !=)
+
+a135 2
+#define TRACE_POW TRACE ('^', "result: " << result \
+                  << ", base: " << base_copy << ", expt: " << expt);
+d137 1
+d139 1
+a139 2
+   if (exponent > 999) throw range_error ("exp too big");
+   int expt = exponent.smallint();
+a140 1
+   TRACE_POW;
+a145 1
+      TRACE_POW;
+d154 1
+a154 1
+   TRACE_POW;
+@
+
+
+1.6
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.5 2013-06-25 15:19:34-07 - - $
+a49 1
+
+a83 1
+
+d85 1
+a85 1
+// Ancient Egyptian multiplication algorithm.
+d102 1
+a102 1
+// Ancient Egyptian division algorithm.
+d104 1
+a104 1
+bigpair bigint::div_rem (const bigint &that) const {
+@
+
+
+1.5
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.4 2013-06-25 15:18:01-07 - - $
+d130 1
+a130 1
+   this->small_value < that.small_value;
+@
+
+
+1.4
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.3 2012-04-10 21:02:20-07 - - $
+a62 5
+int bigint::compare (const bigint &that) const {
+   return this->small_value < that.small_value ? -1
+        : this->small_value > that.small_value ? +1 : 0;
+}
+
+d134 2
+a135 2
+   RESULT operator OPER (int left, const bigint &that) { \
+      return bigint (left) OPER that; \
+@
+
+
+1.3
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.2 2012-04-10 20:43:13-07 - - $
+d130 2
+a131 25
+
+#define TRACE_POW TRACE ('^', "result: " << result \
+                  << ", base: " << base << ", expt: " << expt);
+bigint bigint::pow (const bigint &that) const {
+   bigint base = *this;
+   if (that > 999) throw range_error ("exp too big");
+   int expt = that.smallint();
+   bigint result = 1;
+   TRACE_POW;
+   if (expt < 0) {
+      base = 1 / base;
+      expt = - expt;
+   }
+   while (expt > 0) {
+      TRACE_POW;
+      if (expt & 1) { //odd
+         result = result * base;
+         --expt;
+      }else { //even
+         base = base * base;
+         expt /= 2;
+      }
+   }
+   TRACE_POW;
+   return result;
+d134 3
+a136 14
+//
+// Macros can make repetitive code easier.
+//
+
+#define COMPARE(OPER) \
+   bool bigint::operator OPER (const bigint &that) const { \
+      return compare (that) OPER 0; \
+   }
+COMPARE (==)
+COMPARE (!=)
+COMPARE (< )
+COMPARE (<=)
+COMPARE (> )
+COMPARE (>=)
+a148 4
+INT_LEFT (bool, < )
+INT_LEFT (bool, <=)
+INT_LEFT (bool, > )
+INT_LEFT (bool, >=)
+d155 26
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cpp,v 1.1 2012-04-10 20:42:55-07 - - $
+d50 1
+d90 1
+d130 3
+a132 3
+#define TRACE_POW \
+   TRACE ('^', "result: " << result << ", base: " << base \
+            << ", expt: " << expt);
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: bigint.cc,v 1.12 2011-01-26 14:41:21-08 - - $
+d7 1
+@

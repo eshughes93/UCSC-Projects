@@ -1,0 +1,9 @@
+#!/bin/sh 2>&1
+# $Id: mk.tests,v 1.4 2014-04-24 18:18:18-07 - - $ 2>&1
+./keyvalue <test1.in >run1.stdin 2>&1
+./keyvalue <test2.in >run2.stdin 2>&1
+./keyvalue test1.in >run3.files 2>&1
+./keyvalue test2.in >run4.files 2>&1
+./keyvalue test3.in >run5.files 2>&1
+./keyvalue test*in >run6.files 2>&1
+./keyvalue /no/such no//file/either >run7.nofiles 2>&1

@@ -1,0 +1,7 @@
+partnercheck: ./PARTNER: format OK:
+user    = hablack
+uid     = 7963
+gecos   = Hadley Aaron Black
+home    = /afs/cats.ucsc.edu/users/y/hablack
+shell   = /bin/csh
+

@@ -1,0 +1,104 @@
+Evan Hughes [eshughes@ucsc.edu]
+
+CMPS101 Program 2 README
+
+Observations
+	I haven't tried running these programs at all on my own personal computer, only on the UNIX lab computers. It seems to me a lot of people were having clock issues with the UNIX servers being faster than expected or something along those lines. In any case, I noticed a few things while testing my sorting algorithms. Until I start sorting about at least ten-thousand elements, both sorting algorithms run with a reported time of 0.000000 seconds. After surpassing ten-thousand elements, I start to see some results:
+
+	Sorting 10 elements. 
+	Insertion sort took 0.000000 seconds. 
+	Heap sort took 0.000000 seconds. 
+
+	Sorting 100 elements. 
+	Insertion sort took 0.000000 seconds. 
+	Heap sort took 0.000000 seconds. 
+
+	Sorting 1000 elements. 
+	Insertion sort took 0.000000 seconds. 
+	Heap sort took 0.000000 seconds. 
+
+	Sorting 10000 elements. 
+	Insertion sort took 0.170000 seconds. 
+	Heap sort took 0.000000 seconds. 
+
+	Sorting 50000 elements. 
+	Insertion sort took 7.230000 seconds. 
+	Heap sort took 0.020000 seconds. 
+	
+	Sorting 100000 elements. 
+	Insertion sort took 44.250000 seconds. 
+	Heap sort took 0.040000 seconds. 
+
+Even at ten-thousand elements, heapSort still runs with a reported clock time of 0.000000 seconds, and you can see that it is faster than insertionSort. At fifty-thousand elements, this becomes much more clear, as insertionSort takes a whole 7 seconds longer than heapSort. Finally, with one-hundred-thousand elements, we see how much faster heapSort really is, as the insertionSort algorithm takes 44.21 seconds longer than heapSort. All in all, my observation as concluded by my results, is that heapSort is significantly faster than insertionSort.
+
+
+Files included:
+	heap.h
+	heap.c
+	heapDriver.c
+	
+	List.h
+	List.c
+	
+	insertionSort.h
+	insertionSort.c
+
+	heapSort.h
+	heapSort.c
+
+	sortPrint.c
+	sortComp.c
+
+	Makefile
+
+
+heap.h
+	This is the header file for the heap ADT. It provides a handle to the heap, and allows users access to the heap function prototypes listed in the heap.h file.
+
+
+heap.c
+	This is the implementation file for the heap ADT. Here the heap struct is implemented, along with the prototype functions listed in heap.h.
+
+
+heapDriver.c
+	This is the driver file for the heap ADT. It tests the functions implemented in heap.c to ensure correctness and functionality. Like the sortPrint and sortComp programs, the heapDriver takes an 	input file of integers. THe first line is the amount of integers to be sorted, and every line after it is a single integer to be inserted into the heap, which is then heapified. 
+
+
+List.h
+	Header file for the linked list ADT. Includes prototypes for all linked list functions. Also includes function prototype insertionSort(int keys[], int numKeys).
+
+
+List.c 
+	Implementation file for linked list ADT. All linked list functions are implemented here, including insertionSort(int keys[], int numKeys).
+
+
+insertionSort.h
+	Header file for insertionSort function. Takes an array, performs insertion sort on that array into a linked list, then rewrites the array with the sorted order.
+
+
+insertionSort.c
+	Implementation file for the insertionSort function. Implements the prototype function found in insertionSort.h
+
+
+heapSort.h
+	Header file for heapSort function. Takes an array, puts it in a heap, heapifies to sort the heap, then replaces the keys back in the array in an ordered manner.
+
+
+heapSort.c
+	Implementation file for the heapSort function. Actually implements the prototype function found in heapSort.h
+
+
+sortPrint.c
+	This file contains the program which makes use of both the heap and linked list ADTs. It takes an input file of integers, the first line being the amount of integers to be sorted, and every line after that being a single integer to be inserted into the ADT and sorted accordingly. It prints the array of integers before the array has been sorted, then performs insertionSort on the array and prints the array post-insertionSort. It keeps a copy of the unsorted array, then sorts the copy with heapSort, and prints the array post-heapSort. 
+
+
+sortComp.c 
+	This file contains a program which makes use of both the heap and linked list ADTS. It takes an input file of integers, the first line being the amount of integers to be sorted, and every line after that being a single integer to be inserted into the ADT and sorted accordingly. It uses the system clock to keep a count on how long insertionSort and heapSort take respectively. It then prints the amount of integers to be sorted, and the time (in seconds) it took for each sorting algorithm to complete.
+
+
+Makefile
+	Makefile for all the files listed above.
+	make compiles the sortComp.c file, and lets you run it with : sortComp testFile1 testFile2 ... etc
+	make print compiles the sortPrint.c file, and lets you run it with : sortPrint testFile1 testFile2 ... etc
+	make driver compiles the heapDriver.c file, and lets you run it with : heapDriver testFile1 testFile2 ... etc
+

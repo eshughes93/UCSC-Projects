@@ -1,0 +1,17 @@
+Evan Hughes
+CMPS180 Lab Assignment 1
+
+Database Schema
+
+Downtown Video Schema:
+
+Films(film_id, title, descr, rating, length) key = film_id
+Customers(cust_id,first_name, last_name, email, addr_id) key = cust_id
+Addresses(addr_id,street, city, state, zip, phone_num) key = addr_id
+
+
+City Books Schema:
+
+Books(book_id, title, auth_id) key = book_id
+Author(auth_id,first_name, last_name)
+Customers(cust_id, first_name, last_name, phone_number) key = cust_id

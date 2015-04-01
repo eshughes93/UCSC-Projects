@@ -1,0 +1,89 @@
+Evan Hughes
+eshughes@ucsc.edu
+
+Cristian Gonzalez
+cfgonzal@ucsc.edu
+
+ CMPS 101- Abstract Data Types
+ Program 3 - Amazon Recommendations
+ 
+Files Included:
+
+	bookCountList.h
+	bookCountList.c
+	bookCountListDr.c
+	bookListList.h
+	bookListList.c
+	bookListListDr.c
+	hash.h
+	hash.c
+	hashDr.c
+	Main.c
+	MakeFile
+	README
+ 
+
+	bookCountList.h:
+
+The header file for the bookCountList group. These group of files are a a linked list of a books co-purchases. This also keeps a count of the number of times each book is co-purchased with the book. This shows the names of functions and their respective parameters as well as the name of any structs that we created. The countList struct is used both for keeping track of copurchases made with books in the hash table, as well as the customer's purchase history.
+ 
+
+	bookCountList.c:
+
+The c file for the bookCountList group. This is the body of all the functions described in the  header file. This also shows what the structs we created consist of.
+
+
+	bookCountListDr.c:
+
+The test file for the bookCountList group. This is a c file with it's own main that we used to test  our functions in the bookCountList.c file.
+
+
+	bookListList.h:
+
+The header file for the bookListList group. These group of files create a list of linked list which  contain the struct of data created in the bookCountList group. This allows us to keep track of a  purchase history of books, all of which contain their own co-purchase history. This shows the  names of functions and their respective parameters as well as the name of any structs that we  created. The main struct here is chainList, simply a list contained in each slot of the hash table,  where each node keeps track of both a bookID, and a list of copurchases made with that book.
+
+ 
+	bookListList.c:
+
+The c file for the bookListList group. This is the body of all the functions described in the  header file. This also shows what the structs we created consist of.
+
+
+	bookListListDr.c:
+
+The test file for the bookListList group. This is a c file with it's own main that we used to test  our functions in the bookListList.c file.
+
+ 
+	hash.h:
+
+The header file for the hash group. These group of files work on hashing data elements into  our tables, so as to fit these large indexes in a relatively small table. We use chaining as a  solution to collisions. This also is where we compute the recommendation for a customer. This  shows the names of functions and their  respective parameters as well as the name of any  structs that we created.
+
+ 
+	hash.c:
+
+The c file for the hash group. This is the body of all the functions described in the  header file. This also shows what the structs we created consist of.
+
+
+	hashDr.c:
+
+The test file for the hash group. This is a c file with it's own main that we used to test  our functions in the hash.c file.
+
+
+	Main.c:
+
+The main file takes in the input file, inserts the information into their respective slots in the list  created in bookListList and bookCountList and prints a recommendation if requested.	
+ 
+
+	MakeFile:
+
+Makefile commands:
+
+	make - compile main program, run with "prog3 testfile1 testfile2 etc..."
+	make countList - compiles driver file for the bookCountList ADT, run with "countList"
+	make chainList - compiles driver file for the bookListList ADT, run with "chainList"
+	make hashDriver - compiles driver file for the hashtable ADT, run with "hashDriver"
+
+
+
+	README:
+
+...You are reading me

@@ -1,0 +1,5 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: starting divisioncpp.cpp
+divisioncpp.cpp: $Id: divisioncpp.cpp,v 1.6 2013-06-27 13:24:33-07 - - $
+g++ -g -O0 -Wall -Wextra -std=gnu++0x divisioncpp.cpp -o divisioncpp -lm
+rm -f divisioncpp.o
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ mkc: finished divisioncpp.cpp

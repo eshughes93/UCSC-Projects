@@ -1,0 +1,26 @@
+moveby 15
+border brown 5
+
+define this rectangle 100 150
+define that square 80
+define dat diamond 100 200
+define mah triangle 10 10 60 50 90 10 
+define yo triangle 10 10 200 200 90 10 
+define dis ellipse 100 200
+define my circle 500
+define a right_triangle 200 100
+define le isosceles 100 300
+define an polygon 0 0 100 100 100 200 220 20 200 0
+define name text Times-Roman-24 I AM HADLEY
+
+draw name sea-green 300 300
+draw an pale-turquoise 600 600
+draw yo OliveDrab 400 400
+draw le chocolate 200 200
+draw a lemon-chiffon 300 300
+draw my lemon-chiffon 700 700
+draw dis hot-pink 500 400
+draw mah purple 400 300 
+draw dat  green 300 400
+draw this red 200 200
+draw that blue 100 100

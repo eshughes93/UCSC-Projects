@@ -1,0 +1,169 @@
+head	1.5;
+access;
+symbols;
+locks;
+comment	@# @;
+
+
+1.5
+date	2013.01.25.19.54.27;	author -;	state -;
+branches;
+next	1.4;
+
+1.4
+date	2013.01.25.19.52.57;	author -;	state -;
+branches;
+next	1.3;
+
+1.3
+date	2013.01.25.19.47.06;	author -;	state -;
+branches;
+next	1.2;
+
+1.2
+date	2013.01.25.01.40.30;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2013.01.25.01.39.39;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.5
+log
+@-
+@
+text
+@
+<A HREF=http://www.mathnstuff.com/math/spoken/here/2class/60/egyptm.htm>
+Ancient Egyptian Multiplication, Division, Root Extraction<br>
+http://www.mathnstuff.com/math/spoken/here/2class/60/egyptm.htm
+</A><P>
+
+<A HREF=http://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication>
+Ancient Egyptian multiplication<br>
+http://en.wikipedia.org/wiki/Ancient_Egyptian_multiplication
+</A><P>
+
+<A HREF=http://mathforum.org/library/drmath/view/57574.html>
+Ask Dr. Math: Egyptian Division<br>
+A HREF=http://mathforum.org/library/drmath/view/57574.html
+</A><P>
+
+<A HREF=http://mathforum.org/library/drmath/view/57542.html>
+Asl Dr. Math: Egyptian Method of Multiplication<br>
+http://mathforum.org/library/drmath/view/57542.html
+</A><P>
+
+<A HREF=http://www.eyelid.co.uk/numbers.htm>
+Ancient Egyptian Number Hieroglyphs<br>
+http://www.eyelid.co.uk/numbers.htm
+</A><P>
+
+$Id: References.html,v 1.4 2013-01-25 11:52:57-08 - - $
+@
+
+
+1.4
+log
+@-
+@
+text
+@a0 1
+<PRE>
+d3 1
+a3 1
+Ancient Egyptian Multiplication, Division, Root Extraction
+d5 1
+a5 1
+</A>
+d8 1
+a8 1
+Ancient Egyptian multiplication
+d10 1
+a10 1
+</A>
+d13 1
+a13 1
+Ask Dr. Math: Egyptian Division
+d15 1
+a15 1
+</A>
+d18 1
+a18 1
+Asl Dr. Math: Egyptian Method of Multiplication
+d20 1
+a20 1
+</A>
+d23 1
+a23 1
+Ancient Egyptian Number Hieroglyphs
+d25 1
+a25 1
+</A>
+d27 1
+a27 1
+$Id: References.html,v 1.3 2013-01-25 11:47:06-08 - - $
+@
+
+
+1.3
+log
+@-
+@
+text
+@d2 1
+d7 1
+d12 1
+d17 12
+a28 1
+$Id: References.html,v 1.2 2013-01-24 17:40:30-08 - - $
+@
+
+
+1.2
+log
+@-
+@
+text
+@d1 1
+d3 3
+a5 5
+Ancient Egyptian Multiplication, Division, Root Extraction --
+Computation</A>
+
+<P>
+
+d7 3
+a9 4
+Ancient Egyptian multiplication</A>
+
+<P>
+
+d11 4
+a14 5
+Ask Dr. Math: Egyptian Division</A>
+
+<P>
+
+$Id: References.html,v 1.1 2013-01-24 17:39:39-08 - - $
+@
+
+
+1.1
+log
+@-
+@
+text
+@d5 2
+d10 2
+d15 3
+a17 1
+$Id$
+@

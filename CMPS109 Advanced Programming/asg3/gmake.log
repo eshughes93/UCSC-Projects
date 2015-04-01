@@ -1,0 +1,2 @@
+g++ -g -O0 -Wall -Wextra -std=gnu++0x -c main.cpp
+g++ -g -O0 -Wall -Wextra -std=gnu++0x -o keyvalue listmap.o trace.o util.o main.o

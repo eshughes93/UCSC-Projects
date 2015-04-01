@@ -1,0 +1,47 @@
+Evan Hughes [eshughes@ucsc.edu]
+CMPS101
+Professor David Helmbold
+
+Program 4: Google Directions and Breadth First Search
+
+Included files:
+
+	graph.c
+	graph.h
+	graphDr.c
+	List.c
+	List.h
+	Listdr.c
+	main.c
+	Makefile
+	
+
+
+File descriptions:
+
+	graph.c
+		This is the .c file for my graph module. It contains the implementations of all functions listed in graph.h.
+
+	graph.h
+		Header file for the graph module. Provides users access to graph functions.
+
+	graphDr.c 
+		Driver file for graph module, proves functionality of all functions listed in graph.h
+
+	List.c
+		This is the .c file for the list ADT. Contains implementations of all linked list functions contained in the List.h file.
+
+	List.h 
+		Header file for linked list ADT. Provides users with access to linked list functions.
+
+	Listdr.c
+		Driver file for linked list module. Proves functinality of all functions listed in List.h
+
+	main.c
+		Main program for prog4. Takes input files, creates graphs according to input files, then performs breadth first search on specific vertices in the graph as instructed by the input file. Outputs the shortest path from two vertexes as told by input file.
+
+	Makefile
+		The makefile for this program. 
+		Makefile commands:
+				make graphDr - compiles the graph driver. Run the driver with "graphDr"
+				make listDr - compiles the list driver. Run with "listDr"
