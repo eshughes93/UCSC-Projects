@@ -1,0 +1,111 @@
+Synthtactic Sugar README
+
+CMPS112 Winter 2015 Final Project
+
+Authors: Hadley Black [hablack@ucsc.edu]
+         Carl Eadler  [ceadler@ucsc.edu]
+         Evan Hughes  [eshughes@ucsc.edu]
+
+Things you need:
+
+Python 2.7 - https://www.python.org/download/releases/2.7/
+Python Requests Library - http://docs.python-requests.org/en/latest/user/install/#install
+Pure Data (Pd Extended) - http://puredata.info/downloads/pd-extended
+A Unix shell to run the synthtactic.sh shell script.
+A stable internet connection in the case that you use a text file with words whose definitions
+are not stored in the defs directory, and the program must make a web API call to the Cambridge
+Dictionary API.
+
+Instructions:
+
+    1. Once you have all the necessary items installed, open the synthtactic.pd file in Pure Data.
+       With everything included in the source code, all necessary files should already be present
+       and you can skip to the last piece of instruction to listen to the music created by maya.txt.
+       However, for more options, follow step 2 before doing step 3.
+
+    2. Run the shell script synthtactic.sh in your terminal, like so:
+            >>sh synthtactic.sh $1 $2 $3 $4 $5
+        where $[1-6] are various arguments. 
+            $1 is the text file you want to test given a relative path -- we recommend ../tests/maya.txt, 
+                the Maya Angelou poem "Phenomenal Woman". 
+            $2 is the key in which you want your music to play. The options are:
+                {C#, D, D#, E, F, F#, G, G#, A, A#, B}
+            $3 is the scale in which you want your music to play. The options are:
+                {major, minor, natural-minor, harmonic-minor, melodic-minor}
+            $4 is the tempo in bpm (beats per minute). Any number is a valid input, 
+               but something between 80 and 200 is suggested. 80 will be fairly slow,
+               and 200 will be very fast.  We recommend a bpm of 120, which is the standard.
+            $5 is the number of voices you want to play in Pure Data. Your options are 
+               anywhere 1 and 9.
+
+        The full recommended command to use is:
+            >>sh synthtactic.sh ../tests/maya.txt C major 120 3
+
+        Of course, you may change the test file, key, scale, and number of voices as you please.
+        Make sure the test file contains valid English language words. Some words, though they are
+        valid English, are not always found in the Cambridge Dictionary. Examples we ran into
+        are the words "converter", "programming", "extensible", among others. 
+
+    3.  Finally, with Pd-extended open, go to the toolbar and select Media->DSP On. Click the 
+        button labeled "Initialize instruments" inside the window to make sure everything is
+        ready to go. Then, click the circular button labeled "Play and record", and voila! 
+        You should be hearing music (if your volume is turned up) created via Synthtactic Sugar. 
+
+Source Code:
+    Directories:
+        defs:
+            defs is just the directory where we are saving the responses from the Cambridge 
+            Dictionary API that return with a status code of 200. This means we got an okay 
+            response and successfully returned an XML file with information on a definition
+            of a word. These are not pure XML files however, containing special headers and
+            footers related the the Cambridge dictionary. We save the definitions because
+            we have a limited number of API calls and didn't want to have to make another 
+            API call for a word we already had the definition of. The definitions of all 
+            words contained in the test files are contained here to prevent extraneous
+            API calls, and then some more from our time building the project and running
+            various tests.
+        src:
+            parser.py:
+                This Python file has the main function for the project. It takes as input a 
+                text file in English and parses it. Words which definitions are not already
+                saved in the ../defs directory are looked up via the Cambridge Dictionary API. 
+                This parser also references XMLParse.py and toIML.py, in order to parse the XML
+                from the dictionary API, and then using that information to create IML files
+                that are later translated into the Pure Data script. 
+                When words are not valid English or are not found in the Cambridge Dictionary API,
+                the word "default" is used as a default. A response of 404 from the API will
+                be printed to the terminal, and a message noting that the default word will be used.
+            XMLParse.py:
+                This file contains the helper functions that deal with parsing XML data from
+                the API. Its main function is syllableStack which takes as input a word as a
+                string and a function getXML which is the method the user specifies for getting
+                the XML data. Syllable stack calls a stack of helper functions and returns a
+                tuple containing the number of syllables in the given word and what part of 
+                speech the word represents.
+            toIML.py:
+                This Python script takes the key and scale and calculates the valid notes in MIDI.
+                It is referenced by parser.py with a list of (s_count, part of speech, punctuation) 
+                tuples for each word and does the necessary conversion to an IML file using the 
+                specified tempo to determine note durations.
+            IMLtoPD.py:
+                This Python script converts the IML file created by toIML.py and creates a file 
+                called PD for each voice which is in the form required by the pure data object 
+                “qlist” to read in.
+            synthtactic.sh:
+                This is the shell script use to run all our code. Specifications are in the
+                instructions for running the program, seen above.
+            synthtactic.pd:
+                This is the actual file which the PureData program opens. Within it are a number
+                of simple synthesizers to play the music, and logic to read the PD files generated
+                by IMLtoPD.py. 
+
+            There are also various files, IML[0-2].txt, PD[0-8], and a tempo_file that are 
+            generated by the shell script in the src directory, which are used and generated
+            by IMLtoPD.py for the Pure Data program to read.
+
+        tests:
+            These are just various .txt files that we used for testing purposes. They are input 
+            into the shell script or the parser.py directly, although doing the latter will not 
+            produce the Pure Data files that are needed for a complete project.
+
+Thanks for checking out Synthtactic Sugar!

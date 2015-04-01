@@ -1,0 +1,49 @@
+Synthtactic Sugar
+The text to music converter you didn’t know you needed.
+
+The most useless thing you’ve ever loved.
+
+Hadley Black; Evan Hughes; Carl Eadler;
+Summary
+
+High-level languages
+-Python
+-Web application program interface calls
+-Regular expression
+    -extensible markup language
+    -English
+-Pure Data
+Python
+Using Python two point seven
+Learning a new language by not learning a new language
+
+Cambridge Dictionary application program interface
+-Merriam webster versus Cambridge?
+-application program interfaces
+Ever have a programming language that didn’t give you a reason why it crashed? Welcome to web application program interface calls.
+Ever had to pass variables to a function in 3 different places? Welcome to web application program interface calls. 
+Ever had to wait three days before being able to start calling your code? Welcome to web application program interface calls.
+Ever only been able to call your function three thousand times per month? Welcome to web application program interface calls.
+-Saving definitions to prevent repeated application program interface calls
+-Not all words in dictionary (Like code versus coding, light versus lighter versus lightest)
+Parsing extensible markup language
+-Cambridge dictionary not returning properly formatted extensible markup language files
+-Regular expressions
+    -Not uniform among libraries
+        - ? operator in python - greedy match
+        - ? operator in flex - optional match
+English
+
+-Syllables derived from international phonetic alphabet spelling
+    -unicode
+-Usually one syllable per vowel sound
+    -vowel parsing
+
+Pure Data
+An open source visual programming language for music enthusiasts
+Takes input via intermediate music language -- Intermediate Music Language (written by us)
+    intermediate music language written in the format of:
+Hello World!
+English to Intermediate Music Language
+Intermediate Music Language to Pure Data Script
+Pure Data script to sequencer
